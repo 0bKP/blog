@@ -1,0 +1,410 @@
+<!DOCTYPE html>
+<html lang="lang=" pl-pl>
+<head><meta charset="UTF-8">
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="icon" href="/wp-content/themes/latenightlogin/assets/src/img/lnl-logo.png" type="image/x-icon">
+    <link rel="preconnect" href="https://fonts.googleapis.com/">
+    <link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Courier+Prime:ital,wght@0,400;0,700;1,400;1,700&amp;family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&amp;family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&amp;family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&amp;family=Roboto:ital,wght@0,100..900;1,100..900&amp;display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <meta name="description" content="W prosty sposób opisujemy zawiły świat cyberbezpieczeństwa. Poradniki, recenzje, ciekawostki i wiele więcej!">
+    <meta name="robots" content="max-image-preview:large">
+<link rel="dns-prefetch" href="//www.googletagmanager.com">
+<link rel="dns-prefetch" href="//pagead2.googlesyndication.com">
+<link rel="alternate" type="application/rss+xml" title="Late Night Login » HackTheBox: Artificial Kanał z komentarzami" href="/2025/06/hackthebox-artificial-walkthrough/feed/">
+<link rel="alternate" title="oEmbed (JSON)" type="application/json+oembed" href="/wp-json/oembed/1.0/embed?url=%2F2025%2F06%2Fhackthebox-artificial-walkthrough%2F">
+<link rel="alternate" title="oEmbed (XML)" type="text/xml+oembed" href="/wp-json/oembed/1.0/embed?url=%2F2025%2F06%2Fhackthebox-artificial-walkthrough%2F&amp;format=xml">
+<style id="wp-img-auto-sizes-contain-inline-css" type="text/css">
+img:is([sizes=auto i],[sizes^="auto," i]){contain-intrinsic-size:3000px 1500px}
+/*# sourceURL=wp-img-auto-sizes-contain-inline-css */
+</style>
+<style id="wp-emoji-styles-inline-css" type="text/css">
+
+	img.wp-smiley, img.emoji {
+		display: inline !important;
+		border: none !important;
+		box-shadow: none !important;
+		height: 1em !important;
+		width: 1em !important;
+		margin: 0 0.07em !important;
+		vertical-align: -0.1em !important;
+		background: none !important;
+		padding: 0 !important;
+	}
+/*# sourceURL=wp-emoji-styles-inline-css */
+</style>
+<style id="wp-block-library-inline-css" type="text/css">
+:root{--wp-block-synced-color:#7a00df;--wp-block-synced-color--rgb:122,0,223;--wp-bound-block-color:var(--wp-block-synced-color);--wp-editor-canvas-background:#ddd;--wp-admin-theme-color:#007cba;--wp-admin-theme-color--rgb:0,124,186;--wp-admin-theme-color-darker-10:#006ba1;--wp-admin-theme-color-darker-10--rgb:0,107,160.5;--wp-admin-theme-color-darker-20:#005a87;--wp-admin-theme-color-darker-20--rgb:0,90,135;--wp-admin-border-width-focus:2px}@media (min-resolution:192dpi){:root{--wp-admin-border-width-focus:1.5px}}.wp-element-button{cursor:pointer}:root .has-very-light-gray-background-color{background-color:#eee}:root .has-very-dark-gray-background-color{background-color:#313131}:root .has-very-light-gray-color{color:#eee}:root .has-very-dark-gray-color{color:#313131}:root .has-vivid-green-cyan-to-vivid-cyan-blue-gradient-background{background:linear-gradient(135deg,#00d084,#0693e3)}:root .has-purple-crush-gradient-background{background:linear-gradient(135deg,#34e2e4,#4721fb 50%,#ab1dfe)}:root .has-hazy-dawn-gradient-background{background:linear-gradient(135deg,#faaca8,#dad0ec)}:root .has-subdued-olive-gradient-background{background:linear-gradient(135deg,#fafae1,#67a671)}:root .has-atomic-cream-gradient-background{background:linear-gradient(135deg,#fdd79a,#004a59)}:root .has-nightshade-gradient-background{background:linear-gradient(135deg,#330968,#31cdcf)}:root .has-midnight-gradient-background{background:linear-gradient(135deg,#020381,#2874fc)}:root{--wp--preset--font-size--normal:16px;--wp--preset--font-size--huge:42px}.has-regular-font-size{font-size:1em}.has-larger-font-size{font-size:2.625em}.has-normal-font-size{font-size:var(--wp--preset--font-size--normal)}.has-huge-font-size{font-size:var(--wp--preset--font-size--huge)}.has-text-align-center{text-align:center}.has-text-align-left{text-align:left}.has-text-align-right{text-align:right}.has-fit-text{white-space:nowrap!important}#end-resizable-editor-section{display:none}.aligncenter{clear:both}.items-justified-left{justify-content:flex-start}.items-justified-center{justify-content:center}.items-justified-right{justify-content:flex-end}.items-justified-space-between{justify-content:space-between}.screen-reader-text{border:0;clip-path:inset(50%);height:1px;margin:-1px;overflow:hidden;padding:0;position:absolute;width:1px;word-wrap:normal!important}.screen-reader-text:focus{background-color:#ddd;clip-path:none;color:#444;display:block;font-size:1em;height:auto;left:5px;line-height:normal;padding:15px 23px 14px;text-decoration:none;top:5px;width:auto;z-index:100000}html :where(.has-border-color){border-style:solid}html :where([style*=border-top-color]){border-top-style:solid}html :where([style*=border-right-color]){border-right-style:solid}html :where([style*=border-bottom-color]){border-bottom-style:solid}html :where([style*=border-left-color]){border-left-style:solid}html :where([style*=border-width]){border-style:solid}html :where([style*=border-top-width]){border-top-style:solid}html :where([style*=border-right-width]){border-right-style:solid}html :where([style*=border-bottom-width]){border-bottom-style:solid}html :where([style*=border-left-width]){border-left-style:solid}html :where(img[class*=wp-image-]){height:auto;max-width:100%}:where(figure){margin:0 0 1em}html :where(.is-position-sticky){--wp-admin--admin-bar--position-offset:var(--wp-admin--admin-bar--height,0px)}@media screen and (max-width:600px){html :where(.is-position-sticky){--wp-admin--admin-bar--position-offset:0px}}
+
+/*# sourceURL=wp-block-library-inline-css */
+</style>
+<style id="wp-block-image-inline-css" type="text/css">
+.wp-block-image>a,.wp-block-image>figure>a{display:inline-block}.wp-block-image img{box-sizing:border-box;height:auto;max-width:100%;vertical-align:bottom}@media not (prefers-reduced-motion){.wp-block-image img.hide{visibility:hidden}.wp-block-image img.show{animation:show-content-image .4s}}.wp-block-image[style*=border-radius] img,.wp-block-image[style*=border-radius]>a{border-radius:inherit}.wp-block-image.has-custom-border img{box-sizing:border-box}.wp-block-image.aligncenter{text-align:center}.wp-block-image.alignfull>a,.wp-block-image.alignwide>a{width:100%}.wp-block-image.alignfull img,.wp-block-image.alignwide img{height:auto;width:100%}.wp-block-image .aligncenter,.wp-block-image .alignleft,.wp-block-image .alignright,.wp-block-image.aligncenter,.wp-block-image.alignleft,.wp-block-image.alignright{display:table}.wp-block-image .aligncenter>figcaption,.wp-block-image .alignleft>figcaption,.wp-block-image .alignright>figcaption,.wp-block-image.aligncenter>figcaption,.wp-block-image.alignleft>figcaption,.wp-block-image.alignright>figcaption{caption-side:bottom;display:table-caption}.wp-block-image .alignleft{float:left;margin:.5em 1em .5em 0}.wp-block-image .alignright{float:right;margin:.5em 0 .5em 1em}.wp-block-image .aligncenter{margin-left:auto;margin-right:auto}.wp-block-image :where(figcaption){margin-bottom:1em;margin-top:.5em}.wp-block-image.is-style-circle-mask img{border-radius:9999px}@supports ((-webkit-mask-image:none) or (mask-image:none)) or (-webkit-mask-image:none){.wp-block-image.is-style-circle-mask img{border-radius:0;-webkit-mask-image:url('data:image/svg+xml;utf8,<svg viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg"><circle cx="50" cy="50" r="50"/>');mask-image:url('data:image/svg+xml;utf8,<svg viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg"><circle cx="50" cy="50" r="50"/>');mask-mode:alpha;-webkit-mask-position:center;mask-position:center;-webkit-mask-repeat:no-repeat;mask-repeat:no-repeat;-webkit-mask-size:contain;mask-size:contain}}:root :where(.wp-block-image.is-style-rounded img,.wp-block-image .is-style-rounded img){border-radius:9999px}.wp-block-image figure{margin:0}.wp-lightbox-container{display:flex;flex-direction:column;position:relative}.wp-lightbox-container img{cursor:zoom-in}.wp-lightbox-container img:hover+button{opacity:1}.wp-lightbox-container button{align-items:center;backdrop-filter:blur(16px) saturate(180%);background-color:#5a5a5a40;border:none;border-radius:4px;cursor:zoom-in;display:flex;height:20px;justify-content:center;opacity:0;padding:0;position:absolute;right:16px;text-align:center;top:16px;width:20px;z-index:100}@media not (prefers-reduced-motion){.wp-lightbox-container button{transition:opacity .2s ease}}.wp-lightbox-container button:focus-visible{outline:3px auto #5a5a5a40;outline:3px auto -webkit-focus-ring-color;outline-offset:3px}.wp-lightbox-container button:hover{cursor:pointer;opacity:1}.wp-lightbox-container button:focus{opacity:1}.wp-lightbox-container button:focus,.wp-lightbox-container button:hover,.wp-lightbox-container button:not(:hover):not(:active):not(.has-background){background-color:#5a5a5a40;border:none}.wp-lightbox-overlay{box-sizing:border-box;cursor:zoom-out;height:100vh;left:0;overflow:hidden;position:fixed;top:0;visibility:hidden;width:100%;z-index:100000}.wp-lightbox-overlay .close-button{align-items:center;cursor:pointer;display:flex;justify-content:center;min-height:40px;min-width:40px;padding:0;position:absolute;right:calc(env(safe-area-inset-right) + 16px);top:calc(env(safe-area-inset-top) + 16px);z-index:5000000}.wp-lightbox-overlay .close-button:focus,.wp-lightbox-overlay .close-button:hover,.wp-lightbox-overlay .close-button:not(:hover):not(:active):not(.has-background){background:none;border:none}.wp-lightbox-overlay .lightbox-image-container{height:var(--wp--lightbox-container-height);left:50%;overflow:hidden;position:absolute;top:50%;transform:translate(-50%,-50%);transform-origin:top left;width:var(--wp--lightbox-container-width);z-index:9999999999}.wp-lightbox-overlay .wp-block-image{align-items:center;box-sizing:border-box;display:flex;height:100%;justify-content:center;margin:0;position:relative;transform-origin:0 0;width:100%;z-index:3000000}.wp-lightbox-overlay .wp-block-image img{height:var(--wp--lightbox-image-height);min-height:var(--wp--lightbox-image-height);min-width:var(--wp--lightbox-image-width);width:var(--wp--lightbox-image-width)}.wp-lightbox-overlay .wp-block-image figcaption{display:none}.wp-lightbox-overlay button{background:none;border:none}.wp-lightbox-overlay .scrim{background-color:#fff;height:100%;opacity:.9;position:absolute;width:100%;z-index:2000000}.wp-lightbox-overlay.active{visibility:visible}@media not (prefers-reduced-motion){.wp-lightbox-overlay.active{animation:turn-on-visibility .25s both}.wp-lightbox-overlay.active img{animation:turn-on-visibility .35s both}.wp-lightbox-overlay.show-closing-animation:not(.active){animation:turn-off-visibility .35s both}.wp-lightbox-overlay.show-closing-animation:not(.active) img{animation:turn-off-visibility .25s both}.wp-lightbox-overlay.zoom.active{animation:none;opacity:1;visibility:visible}.wp-lightbox-overlay.zoom.active .lightbox-image-container{animation:lightbox-zoom-in .4s}.wp-lightbox-overlay.zoom.active .lightbox-image-container img{animation:none}.wp-lightbox-overlay.zoom.active .scrim{animation:turn-on-visibility .4s forwards}.wp-lightbox-overlay.zoom.show-closing-animation:not(.active){animation:none}.wp-lightbox-overlay.zoom.show-closing-animation:not(.active) .lightbox-image-container{animation:lightbox-zoom-out .4s}.wp-lightbox-overlay.zoom.show-closing-animation:not(.active) .lightbox-image-container img{animation:none}.wp-lightbox-overlay.zoom.show-closing-animation:not(.active) .scrim{animation:turn-off-visibility .4s forwards}}@keyframes show-content-image{0%{visibility:hidden}99%{visibility:hidden}to{visibility:visible}}@keyframes turn-on-visibility{0%{opacity:0}to{opacity:1}}@keyframes turn-off-visibility{0%{opacity:1;visibility:visible}99%{opacity:0;visibility:visible}to{opacity:0;visibility:hidden}}@keyframes lightbox-zoom-in{0%{transform:translate(calc((-100vw + var(--wp--lightbox-scrollbar-width))/2 + var(--wp--lightbox-initial-left-position)),calc(-50vh + var(--wp--lightbox-initial-top-position))) scale(var(--wp--lightbox-scale))}to{transform:translate(-50%,-50%) scale(1)}}@keyframes lightbox-zoom-out{0%{transform:translate(-50%,-50%) scale(1);visibility:visible}99%{visibility:visible}to{transform:translate(calc((-100vw + var(--wp--lightbox-scrollbar-width))/2 + var(--wp--lightbox-initial-left-position)),calc(-50vh + var(--wp--lightbox-initial-top-position))) scale(var(--wp--lightbox-scale));visibility:hidden}}
+/*# sourceURL=/wp-includes/blocks/image/style.min.css */
+</style>
+<style id="wp-block-paragraph-inline-css" type="text/css">
+.is-small-text{font-size:.875em}.is-regular-text{font-size:1em}.is-large-text{font-size:2.25em}.is-larger-text{font-size:3em}.has-drop-cap:not(:focus):first-letter{float:left;font-size:8.4em;font-style:normal;font-weight:100;line-height:.68;margin:.05em .1em 0 0;text-transform:uppercase}body.rtl .has-drop-cap:not(:focus):first-letter{float:none;margin-left:.1em}p.has-drop-cap.has-background{overflow:hidden}:root :where(p.has-background){padding:1.25em 2.375em}:where(p.has-text-color:not(.has-link-color)) a{color:inherit}p.has-text-align-left[style*="writing-mode:vertical-lr"],p.has-text-align-right[style*="writing-mode:vertical-rl"]{rotate:180deg}
+/*# sourceURL=/wp-includes/blocks/paragraph/style.min.css */
+</style>
+
+<style id="classic-theme-styles-inline-css" type="text/css">
+/*! This file is auto-generated */
+.wp-block-button__link{color:#fff;background-color:#32373c;border-radius:9999px;box-shadow:none;text-decoration:none;padding:calc(.667em + 2px) calc(1.333em + 2px);font-size:1.125em}.wp-block-file__button{background:#32373c;color:#fff;text-decoration:none}
+/*# sourceURL=/wp-includes/css/classic-themes.min.css */
+</style>
+<style id="global-styles-inline-css" type="text/css">
+:root{--wp--preset--aspect-ratio--square: 1;--wp--preset--aspect-ratio--4-3: 4/3;--wp--preset--aspect-ratio--3-4: 3/4;--wp--preset--aspect-ratio--3-2: 3/2;--wp--preset--aspect-ratio--2-3: 2/3;--wp--preset--aspect-ratio--16-9: 16/9;--wp--preset--aspect-ratio--9-16: 9/16;--wp--preset--color--black: #000000;--wp--preset--color--cyan-bluish-gray: #abb8c3;--wp--preset--color--white: #ffffff;--wp--preset--color--pale-pink: #f78da7;--wp--preset--color--vivid-red: #cf2e2e;--wp--preset--color--luminous-vivid-orange: #ff6900;--wp--preset--color--luminous-vivid-amber: #fcb900;--wp--preset--color--light-green-cyan: #7bdcb5;--wp--preset--color--vivid-green-cyan: #00d084;--wp--preset--color--pale-cyan-blue: #8ed1fc;--wp--preset--color--vivid-cyan-blue: #0693e3;--wp--preset--color--vivid-purple: #9b51e0;--wp--preset--gradient--vivid-cyan-blue-to-vivid-purple: linear-gradient(135deg,rgb(6,147,227) 0%,rgb(155,81,224) 100%);--wp--preset--gradient--light-green-cyan-to-vivid-green-cyan: linear-gradient(135deg,rgb(122,220,180) 0%,rgb(0,208,130) 100%);--wp--preset--gradient--luminous-vivid-amber-to-luminous-vivid-orange: linear-gradient(135deg,rgb(252,185,0) 0%,rgb(255,105,0) 100%);--wp--preset--gradient--luminous-vivid-orange-to-vivid-red: linear-gradient(135deg,rgb(255,105,0) 0%,rgb(207,46,46) 100%);--wp--preset--gradient--very-light-gray-to-cyan-bluish-gray: linear-gradient(135deg,rgb(238,238,238) 0%,rgb(169,184,195) 100%);--wp--preset--gradient--cool-to-warm-spectrum: linear-gradient(135deg,rgb(74,234,220) 0%,rgb(151,120,209) 20%,rgb(207,42,186) 40%,rgb(238,44,130) 60%,rgb(251,105,98) 80%,rgb(254,248,76) 100%);--wp--preset--gradient--blush-light-purple: linear-gradient(135deg,rgb(255,206,236) 0%,rgb(152,150,240) 100%);--wp--preset--gradient--blush-bordeaux: linear-gradient(135deg,rgb(254,205,165) 0%,rgb(254,45,45) 50%,rgb(107,0,62) 100%);--wp--preset--gradient--luminous-dusk: linear-gradient(135deg,rgb(255,203,112) 0%,rgb(199,81,192) 50%,rgb(65,88,208) 100%);--wp--preset--gradient--pale-ocean: linear-gradient(135deg,rgb(255,245,203) 0%,rgb(182,227,212) 50%,rgb(51,167,181) 100%);--wp--preset--gradient--electric-grass: linear-gradient(135deg,rgb(202,248,128) 0%,rgb(113,206,126) 100%);--wp--preset--gradient--midnight: linear-gradient(135deg,rgb(2,3,129) 0%,rgb(40,116,252) 100%);--wp--preset--font-size--small: 13px;--wp--preset--font-size--medium: 20px;--wp--preset--font-size--large: 36px;--wp--preset--font-size--x-large: 42px;--wp--preset--spacing--20: 0.44rem;--wp--preset--spacing--30: 0.67rem;--wp--preset--spacing--40: 1rem;--wp--preset--spacing--50: 1.5rem;--wp--preset--spacing--60: 2.25rem;--wp--preset--spacing--70: 3.38rem;--wp--preset--spacing--80: 5.06rem;--wp--preset--shadow--natural: 6px 6px 9px rgba(0, 0, 0, 0.2);--wp--preset--shadow--deep: 12px 12px 50px rgba(0, 0, 0, 0.4);--wp--preset--shadow--sharp: 6px 6px 0px rgba(0, 0, 0, 0.2);--wp--preset--shadow--outlined: 6px 6px 0px -3px rgb(255, 255, 255), 6px 6px rgb(0, 0, 0);--wp--preset--shadow--crisp: 6px 6px 0px rgb(0, 0, 0);}:where(.is-layout-flex){gap: 0.5em;}:where(.is-layout-grid){gap: 0.5em;}body .is-layout-flex{display: flex;}.is-layout-flex{flex-wrap: wrap;align-items: center;}.is-layout-flex > :is(*, div){margin: 0;}body .is-layout-grid{display: grid;}.is-layout-grid > :is(*, div){margin: 0;}:where(.wp-block-columns.is-layout-flex){gap: 2em;}:where(.wp-block-columns.is-layout-grid){gap: 2em;}:where(.wp-block-post-template.is-layout-flex){gap: 1.25em;}:where(.wp-block-post-template.is-layout-grid){gap: 1.25em;}.has-black-color{color: var(--wp--preset--color--black) !important;}.has-cyan-bluish-gray-color{color: var(--wp--preset--color--cyan-bluish-gray) !important;}.has-white-color{color: var(--wp--preset--color--white) !important;}.has-pale-pink-color{color: var(--wp--preset--color--pale-pink) !important;}.has-vivid-red-color{color: var(--wp--preset--color--vivid-red) !important;}.has-luminous-vivid-orange-color{color: var(--wp--preset--color--luminous-vivid-orange) !important;}.has-luminous-vivid-amber-color{color: var(--wp--preset--color--luminous-vivid-amber) !important;}.has-light-green-cyan-color{color: var(--wp--preset--color--light-green-cyan) !important;}.has-vivid-green-cyan-color{color: var(--wp--preset--color--vivid-green-cyan) !important;}.has-pale-cyan-blue-color{color: var(--wp--preset--color--pale-cyan-blue) !important;}.has-vivid-cyan-blue-color{color: var(--wp--preset--color--vivid-cyan-blue) !important;}.has-vivid-purple-color{color: var(--wp--preset--color--vivid-purple) !important;}.has-black-background-color{background-color: var(--wp--preset--color--black) !important;}.has-cyan-bluish-gray-background-color{background-color: var(--wp--preset--color--cyan-bluish-gray) !important;}.has-white-background-color{background-color: var(--wp--preset--color--white) !important;}.has-pale-pink-background-color{background-color: var(--wp--preset--color--pale-pink) !important;}.has-vivid-red-background-color{background-color: var(--wp--preset--color--vivid-red) !important;}.has-luminous-vivid-orange-background-color{background-color: var(--wp--preset--color--luminous-vivid-orange) !important;}.has-luminous-vivid-amber-background-color{background-color: var(--wp--preset--color--luminous-vivid-amber) !important;}.has-light-green-cyan-background-color{background-color: var(--wp--preset--color--light-green-cyan) !important;}.has-vivid-green-cyan-background-color{background-color: var(--wp--preset--color--vivid-green-cyan) !important;}.has-pale-cyan-blue-background-color{background-color: var(--wp--preset--color--pale-cyan-blue) !important;}.has-vivid-cyan-blue-background-color{background-color: var(--wp--preset--color--vivid-cyan-blue) !important;}.has-vivid-purple-background-color{background-color: var(--wp--preset--color--vivid-purple) !important;}.has-black-border-color{border-color: var(--wp--preset--color--black) !important;}.has-cyan-bluish-gray-border-color{border-color: var(--wp--preset--color--cyan-bluish-gray) !important;}.has-white-border-color{border-color: var(--wp--preset--color--white) !important;}.has-pale-pink-border-color{border-color: var(--wp--preset--color--pale-pink) !important;}.has-vivid-red-border-color{border-color: var(--wp--preset--color--vivid-red) !important;}.has-luminous-vivid-orange-border-color{border-color: var(--wp--preset--color--luminous-vivid-orange) !important;}.has-luminous-vivid-amber-border-color{border-color: var(--wp--preset--color--luminous-vivid-amber) !important;}.has-light-green-cyan-border-color{border-color: var(--wp--preset--color--light-green-cyan) !important;}.has-vivid-green-cyan-border-color{border-color: var(--wp--preset--color--vivid-green-cyan) !important;}.has-pale-cyan-blue-border-color{border-color: var(--wp--preset--color--pale-cyan-blue) !important;}.has-vivid-cyan-blue-border-color{border-color: var(--wp--preset--color--vivid-cyan-blue) !important;}.has-vivid-purple-border-color{border-color: var(--wp--preset--color--vivid-purple) !important;}.has-vivid-cyan-blue-to-vivid-purple-gradient-background{background: var(--wp--preset--gradient--vivid-cyan-blue-to-vivid-purple) !important;}.has-light-green-cyan-to-vivid-green-cyan-gradient-background{background: var(--wp--preset--gradient--light-green-cyan-to-vivid-green-cyan) !important;}.has-luminous-vivid-amber-to-luminous-vivid-orange-gradient-background{background: var(--wp--preset--gradient--luminous-vivid-amber-to-luminous-vivid-orange) !important;}.has-luminous-vivid-orange-to-vivid-red-gradient-background{background: var(--wp--preset--gradient--luminous-vivid-orange-to-vivid-red) !important;}.has-very-light-gray-to-cyan-bluish-gray-gradient-background{background: var(--wp--preset--gradient--very-light-gray-to-cyan-bluish-gray) !important;}.has-cool-to-warm-spectrum-gradient-background{background: var(--wp--preset--gradient--cool-to-warm-spectrum) !important;}.has-blush-light-purple-gradient-background{background: var(--wp--preset--gradient--blush-light-purple) !important;}.has-blush-bordeaux-gradient-background{background: var(--wp--preset--gradient--blush-bordeaux) !important;}.has-luminous-dusk-gradient-background{background: var(--wp--preset--gradient--luminous-dusk) !important;}.has-pale-ocean-gradient-background{background: var(--wp--preset--gradient--pale-ocean) !important;}.has-electric-grass-gradient-background{background: var(--wp--preset--gradient--electric-grass) !important;}.has-midnight-gradient-background{background: var(--wp--preset--gradient--midnight) !important;}.has-small-font-size{font-size: var(--wp--preset--font-size--small) !important;}.has-medium-font-size{font-size: var(--wp--preset--font-size--medium) !important;}.has-large-font-size{font-size: var(--wp--preset--font-size--large) !important;}.has-x-large-font-size{font-size: var(--wp--preset--font-size--x-large) !important;}
+/*# sourceURL=global-styles-inline-css */
+</style>
+
+<link rel="stylesheet" id="bootstrap-css-css" href="/wp-content/themes/latenightlogin/assets/src/library/css/bootstrap.min.css?ver=6.9.4" type="text/css" media="all">
+<link rel="stylesheet" id="style-css-css" href="/wp-content/themes/latenightlogin/style.css?ver=1751194528" type="text/css" media="all">
+<link rel="stylesheet" id="newsletter-css" href="/wp-content/plugins/newsletter/style.css?ver=8.8.7" type="text/css" media="all">
+<script type="text/javascript" src="/wp-includes/js/jquery/jquery.min.js?ver=3.7.1" id="jquery-core-js"></script>
+<script type="text/javascript" src="/wp-includes/js/jquery/jquery-migrate.min.js?ver=3.4.1" id="jquery-migrate-js"></script>
+
+<!-- Fragment znacznika Google (gtag.js) dodany przez Site Kit -->
+<!-- Fragment Google Analytics dodany przez Site Kit -->
+<script type="text/javascript" src="https://www.googletagmanager.com/gtag/js?id=GT-M39VBDNG" id="google_gtagjs-js" async></script>
+<script type="text/javascript" id="google_gtagjs-js-after">
+/* <![CDATA[ */
+window.dataLayer = window.dataLayer || [];function gtag(){dataLayer.push(arguments);}
+gtag("set","linker",{"domains":["latenightlogin.com"]});
+gtag("js", new Date());
+gtag("set", "developer_id.dZTNiMT", true);
+gtag("config", "GT-M39VBDNG");
+ window._googlesitekit = window._googlesitekit || {}; window._googlesitekit.throttledEvents = []; window._googlesitekit.gtagEvent = (name, data) => { var key = JSON.stringify( { name, data } ); if ( !! window._googlesitekit.throttledEvents[ key ] ) { return; } window._googlesitekit.throttledEvents[ key ] = true; setTimeout( () => { delete window._googlesitekit.throttledEvents[ key ]; }, 5 ); gtag( "event", name, { ...data, event_source: "site-kit" } ); }; 
+//# sourceURL=google_gtagjs-js-after
+/* ]]> */
+</script>
+<link rel="https://api.w.org/" href="/wp-json/"><link rel="alternate" title="JSON" type="application/json" href="/wp-json/wp/v2/posts/1439"><link rel="EditURI" type="application/rsd+xml" title="RSD" href="/xmlrpc.php?rsd">
+<meta name="generator" content="WordPress 6.9.4">
+<link rel="canonical" href="/2025/06/hackthebox-artificial-walkthrough/">
+<link rel="shortlink" href="/?p=1439">
+<meta name="generator" content="Site Kit by Google 1.176.0">
+<!-- Znaczniki meta Google AdSense dodane przez Site Kit -->
+<meta name="google-adsense-platform-account" content="ca-host-pub-2644536267352236">
+<meta name="google-adsense-platform-domain" content="sitekit.withgoogle.com">
+<!-- Zakończ dodawanie meta znaczników Google AdSense przez Site Kit -->
+
+<!-- Fragment Google AdSense dodany przez Site Kit -->
+<script type="text/javascript" async="async" src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-9614501413012631&amp;host=ca-host-pub-2644536267352236" crossorigin="anonymous"></script>
+
+<!-- Zakończ fragment Google AdSense dodany przez Site Kit -->
+<link rel="icon" href="/wp-content/uploads/2025/05/cropped-miniature-corners-32x32.png" sizes="32x32">
+<link rel="icon" href="/wp-content/uploads/2025/05/cropped-miniature-corners-192x192.png" sizes="192x192">
+<link rel="apple-touch-icon" href="/wp-content/uploads/2025/05/cropped-miniature-corners-180x180.png">
+<meta name="msapplication-TileImage" content="/wp-content/uploads/2025/05/cropped-miniature-corners-270x270.png">
+    <title>Late Night Login</title>
+</head>
+
+<body class="wp-singular post-template-default single single-post postid-1439 single-format-standard wp-theme-latenightlogin">
+    
+<header>
+    
+<nav class="navbar">
+    <a href="/">
+        <div class="logo">
+            <img class="logo-desktop" src="/wp-content/themes/latenightlogin/assets/src/img/lnl-logo.png" alt="Logo">
+            <img class="logo-mobile" src="/wp-content/themes/latenightlogin/assets/src/img/logo-mobile.png" alt="Logo">
+        </div>
+    </a>
+
+    <div class="hamburger" id="hamburger" onclick="toggleMenu()"> </div>
+
+    <div class="menu" id="navbarMenu">
+        <a href="/" id="nav-home">
+            <div class="nav-button">
+                STRONA GŁÓWNA
+            </div>
+        </a>
+        <a href="#categories-section" id="nav-categories">
+            <div class="nav-button">
+                KATEGORIE
+            </div>
+        </a>
+        <a href="/about/" id="nav-about">
+            <div class="nav-button" id="nav-about">
+                O NAS
+            </div>
+        </a>
+        <a href="/contact/" id="nav-contact">
+            <div class="nav-button">
+                KONTAKT
+            </div>
+        </a>
+    </div>
+
+</nav></header>
+
+<div class="container">
+    <div class="meta-info" style="margin-top: 80px;">
+        <span class="post-category"> <ul class="post-categories">
+	<li><a href="/category/cyberbezpieczenstwo-pl/" rel="category tag">Cyberbezpieczeństwo</a></li></ul> </span>
+        <span class="post-date"> 28 czerwca 2025 </span>
+    </div>
+    <div class="single-post-header animated-header js-hidden">
+        <span class="typing-text"> HackTheBox: Artificial </span>
+    </div>
+
+    <div class="single-post-content">
+        
+<p>W tym wpisie przyjrzymy się maszynie Artificial. To prosty, ale bardzo interesujący box, który wymaga znajomości paru technik: wykorzystywania znanych podatności, łamania haseł, tworzenia przekierowań portów SSH, tworzenia kontenerów Dockera i wiele więcej.</p>
+
+
+
+<h3> Rekonesans </h3>
+
+
+
+<p>Na początek sprawdzimy aktywne usługi przy pomocy <a href="/2025/06/poradnik-nmap-dla-poczatkujacych/">Nmapa</a>:</p>
+
+
+
+<pre class="code-block">
+<code>
+$ nmap -p- 10.10.11.74 -sS
+</code>
+</pre>
+
+
+
+<p>Jest to typowa kombinacja portów: 22 i 80. Będziemy mieli do czynienia z atakowaniem usług www.</p>
+
+
+
+<pre class="code-block">
+<code>
+$ nmap -p22,80 -sC -sV -oN scan.txt 10.10.11.74
+Starting Nmap 7.95 ( https://nmap.org ) at 2025-06-28 11:47 EDT
+Nmap scan report for 10.10.11.74
+Host is up (0.029s latency).
+
+PORT   STATE SERVICE VERSION
+22/tcp open  ssh     OpenSSH 8.2p1 Ubuntu 4ubuntu0.13 (Ubuntu Linux; protocol 2.0)
+| ssh-hostkey: 
+|   3072 7c:e4:8d:84:c5:de:91:3a:5a:2b:9d:34:ed:d6:99:17 (RSA)
+|   256 83:46:2d:cf:73:6d:28:6f:11:d5:1d:b4:88:20:d6:7c (ECDSA)
+|_  256 e3:18:2e:3b:40:61:b4:59:87:e8:4a:29:24:0f:6a:fc (ED25519)
+80/tcp open  http    nginx 1.18.0 (Ubuntu)
+|_http-server-header: nginx/1.18.0 (Ubuntu)
+|_http-title: Did not follow redirect to http://artificial.htb/
+Service Info: OS: Linux; CPE: cpe:/o:linux:linux_kernel
+
+Service detection performed. Please report any incorrect results at https://nmap.org/submit/ .
+Nmap done: 1 IP address (1 host up) scanned in 13.98 seconds
+</code>
+</pre>
+
+
+
+<p>Zajrzyjmy, co się kryje na serwerze webowym.</p>
+
+
+
+        <div class="protected-preview" style="position: relative;">
+            <div class="blurred-preview" style="position: relative;
+                filter: blur(6px);
+                mask-image: linear-gradient(to bottom, rgba(0,0,0,1) 30%, rgba(0,0,0,0.2) 80%, rgba(0,0,0,0) 100%);
+                -webkit-mask-image: linear-gradient(to bottom, rgba(0,0,0,1) 30%, rgba(0,0,0,0.2) 80%, rgba(0,0,0,0) 100%);
+                pointer-events: none; max-height: 500px; overflow: hidden;"> 
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus pharetra massa sit amet lorem hendrerit, at gravida neque condimentum. Nulla vel 
+            sagittis purus, vitae volutpat ante. Mauris et convallis lectus, non sagittis lorem. Aliquam vel auctor nisl. Donec imperdiet ipsum lectus, et volutpat felis aliquet in.  br&gt;
+            <pre class="code-block"> <code>  
+Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus pharetra massa sit amet lorem hendrerit, 
+at gravida neque condimentum. Nulla vel sagittis purus, vitae volutpat ante. Mauris et convallis lectus, non sagittis lorem. 
+            </code> </pre>
+            Aliquam vel auctor nisl. Donec i mperdiet ipsum lectus, et volutpat felis aliquet in. 
+            Fusce maximus dignissim velit, id blandit magna euismod et. Pellentesque consectetur nisi justo, vel posuere elit facilisis vehicula. Sed in ultrices orci. Nam gravida congue purus, 
+            non consectetur urna sollicitudin et. Nam ultricies urna a nisl semper lacinia. Sed eros ipsum, vehicula sit amet condimentum at, efficitur quis quam. Quisque porta elit velit, non 
+            semper sem faucibus ut. Cras sagittis dui a porta molestie. Aenean aliquet molestie erat maximus efficitur. Phasellus ultrices, sapien eu tempus lacinia, ante justo interdum neque, vitae 
+            semper libero ligula ac nisl. Integer cursus gravida nisl in venenatis. Mauris nec ipsum commodo, vehicula lacus vulputate, pharetra felis. Suspendisse commodo metus in condimentum suscipit. 
+            Nunc vel hendrerit justo. Maecenas imperdiet aliquet magna quis auctor. 
+            <img decoding="async" src="/wp-content/themes/latenightlogin/assets/src/img/protected-code-snippet.PNG" alt="How to start hacking?" width="700px height=" auto>
+            Aliquam vel auctor nisl. Donec i mperdiet ipsum lectus, et volutpat felis aliquet in. 
+            Fusce maximus dignissim velit, id blandit magna euismod et. Pellentesque consectetur nisi justo, vel posuere elit facilisis vehicula. Sed in ultrices orci. Nam gravida congue purus, 
+            non consectetur urna sollicitudin et. Nam ultricies urna a nisl semper lacinia. Sed eros ipsum, vehicula sit amet condimentum at, efficitur quis quam. Quisque porta elit velit, non 
+            semper sem faucibus ut. Cras sagittis dui a porta molestie. Aenean aliquet molestie erat maximus efficitur. Phasellus ultrices, sapien eu tempus lacinia, ante justo interdum neque, vitae 
+            semper libero ligula ac nisl. Integer cursus gravida nisl in venenatis. Mauris nec ipsum commodo, vehicula lacus vulputate, pharetra felis. Suspendisse commodo metus in condimentum suscipit. 
+            Nunc vel hendrerit justo. Maecenas imperdiet aliquet magna quis auctor. 
+            </div>
+            <div class="form-overlay" style="position: absolute;
+                top: 0;
+                left: 0;
+                width: 100%; 
+                height: 100%;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                background: rgba(17, 24, 39, 0.6);
+                backdrop-filter: blur(2px);">
+        <form method="post">
+            <img decoding="async" src="/wp-content/themes/latenightlogin/assets/src/img/protected-content.png" alt="Chronione hasłem" class="protected-image">
+            
+            <div id="protected-note" style="text-align: center">
+                Artykuł jest częściowo chroniony hasłem, ponieważ dotyczy aktywnej maszyny na platformie Hack The Box. 
+                Hasło zostanie usunięte po przejściu maszyny do archiwum.
+            </div>
+            <input type="text" name="fragment_password" class="article-protected-input" placeholder="Podaj flagę root, aby wyświetlić zawartość" required>
+            <input type="submit" value="Odblokuj" class="article-protected-btn">
+        </form>
+            </div> <!-- .form-overlay -->
+        </div> <!-- .protected-preview -->
+
+
+
+<p></p>
+    </div>
+
+    <div class="related-posts-header">
+        Może Cię zainteresuje?
+    </div>
+    <section class="related-posts">
+                            <div class="related-post">
+                        <a href="/2025/06/dark-patterns/">
+                            <img width="300" height="200" src="/wp-content/uploads/2025/05/dark-patterns-300x200.png" class="attachment-medium size-medium wp-post-image" alt="" decoding="async" fetchpriority="high" srcset="/wp-content/uploads/2025/05/dark-patterns-300x200.png 300w, /wp-content/uploads/2025/05/dark-patterns.png 1536w" sizes="(max-width: 300px) 100vw, 300px">                            <h3>Dark Patterns: klikniesz tam, gdzie będą chcieli</h3>
+                            <p>
+Czy jesteś osobą dbającą o swoją prywatność w sieci? Nawet najbardziej świadomi użytkownicy mogą paść ofiarą sprytnych sztuczek projektantów! Mowa…</p>
+                        </a>
+                    </div>
+                                <div class="related-post">
+                        <a href="/2025/05/brambul-analiza-statyczna-malware/">
+                            <img width="300" height="200" src="/wp-content/uploads/2025/05/brambul-300x200.png" class="attachment-medium size-medium wp-post-image" alt="" decoding="async" srcset="/wp-content/uploads/2025/05/brambul-300x200.png 300w, /wp-content/uploads/2025/05/brambul.png 1536w" sizes="(max-width: 300px) 100vw, 300px">                            <h3>Brambul pod mikroskopem. Poznaj narzędzia grup APT!</h3>
+                            <p>Poniższa analiza stanowi fragment większego artykułu poświęconego atakowi na Sony Pictures Entertainment z 2014 roku – jednej z najgłośniejszych kampanii…</p>
+                        </a>
+                    </div>
+                                <div class="related-post">
+                        <a href="/2025/05/ssl-stripping-poradnik/">
+                            <img width="300" height="300" src="/wp-content/uploads/2025/05/SSL-Stripping-300x300.png" class="attachment-medium size-medium wp-post-image" alt="" decoding="async" srcset="/wp-content/uploads/2025/05/SSL-Stripping-300x300.png 300w, /wp-content/uploads/2025/05/SSL-Stripping-150x150.png 150w, /wp-content/uploads/2025/05/SSL-Stripping.png 1024w" sizes="(max-width: 300px) 100vw, 300px">                            <h3>SSL Stripping: Jak rozbroić HTTPS</h3>
+                            <p>
+SSL Stripping jest to rodzaj cyberataku polegającego na zredukowaniu bezpiecznego połączenia HTTPS do nieszyfrowanego HTTP. W efekcie, napastnik może odczytać…</p>
+                        </a>
+                    </div>
+                                    <div class="related-post">
+                            <a href="/2025/06/studia-informatyczne-opinie-2025/">
+                                <img width="300" height="200" src="/wp-content/uploads/2025/06/studia-informatyka-300x200.png" class="attachment-medium size-medium wp-post-image" alt="" decoding="async" srcset="/wp-content/uploads/2025/06/studia-informatyka-300x200.png 300w, /wp-content/uploads/2025/06/studia-informatyka-1024x683.png 1024w, /wp-content/uploads/2025/06/studia-informatyka-768x512.png 768w, /wp-content/uploads/2025/06/studia-informatyka.png 1536w" sizes="(max-width: 300px) 100vw, 300px">                                <h3>Studia informatyczne w Polsce: czy warto? [Wyniki ankiety 2025]</h3>
+                                <p>Zbliżają się wakacje, a to oznacza, że tysiące maturzystów będzie musiało podjąć bardzo ważną decyzję – co dalej? 
+
+Wybór studiów…</p>
+                            </a>
+                        </div>
+                        </section>
+
+    
+<script>
+function handleNewsletterSubmit(event) {
+    event.preventDefault();
+
+    const form = event.target;
+    const button = document.getElementById('newsletter-submit-btn');
+    const successMsg = document.getElementById('newsletter-success');
+
+    // Wyłącz przycisk i zmień tekst na „..."
+    button.disabled = true;
+    button.innerHTML = '⏳ Wysyłanie...';
+
+    fetch(form.action, {
+        method: "POST",
+        body: new FormData(form),
+    })
+    .then(res => res.text())
+    .then(() => {
+        // Sukces – zamień przycisk na checkmark
+        button.innerHTML = '✅ Zapisano!';
+        button.style.backgroundColor = '#99F67540'; // zielony
+        button.style.cursor = 'default';
+
+        // Opcjonalnie: pokaż dodatkowy komunikat
+        // successMsg.style.display = 'block';
+
+        form.reset(); // wyczyść pole e-mail
+    })
+    .catch(() => {
+        // Błąd – przywróć przycisk
+        button.disabled = false;
+        button.innerHTML = 'Spróbuj ponownie';
+        button.style.backgroundColor = '#e74c3c'; // czerwony
+    });
+
+    return false;
+}
+</script>
+
+<footer class="">
+    <div class="newsletter">
+        <h2> Zapisz się na newsletter! </h2>
+        <p> Wrzucam tam tylko to, co sam chciałbym dostać. Serio!  </p>
+
+        <form class="newsletter-input" method="post" action="/wordpress/wp-admin/admin-ajax.php?action=tnp&amp;na=s" onsubmit="return handleNewsletterSubmit(event)">
+            <input type="email" name="ne" class="newsletter-form" placeholder="username@domain.tld" required>
+            <button type="submit" class="newsletter-button" id="newsletter-submit-btn"> ZAPISZ SIĘ! </button>
+        </form>
+
+        <div id="newsletter-success" style="display:none; position: fixed; top: 30%; left: 50%; transform: translateX(-50%); background: white; padding: 20px; border: 2px solid #000; z-index: 1000;">
+            Dziękujemy za zapis
+        </div>
+
+        <div class="socials">
+            <a href="https://x.com/latenightlogin_" target="_blank">
+                <div class="social social-x">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewbox="0 0 512 512" height="40px" width="40px">
+                        <path fill="#ffffff" d="M389.2 48h70.6L305.6 224.2 487 464H345L233.7 318.6 106.5 464H35.8L200.7 275.5 26.8 48H172.4L272.9 180.9 389.2 48zM364.4 421.8h39.1L151.1 88h-42L364.4 421.8z"></path>
+                    </svg>
+                </div>
+            </a>
+            <a href="/feed/" target="_blank">
+                <div class="social social-rss">
+                    <img src="/wp-content/themes/latenightlogin/assets/src/img/rss-svgrepo-com.svg" alt="RSS Ikona">
+                </div>
+            </a>
+        </div>
+    </div>
+
+    <div id="contact">
+        <b> Chcesz pogadać? </b> <br>
+        Masz pytania, sugestie, albo po prostu chcesz się przywitać? Napisz do mnie: <br>
+        📬 <span style="color: #99F675"><a href="/cdn-cgi/l/email-protection" class="__cf_email__" data-cfemail="11727e7f65707265517d7065747f787679657d7e76787f3f727e7c">[email protected]</a> </span> <br> <br>
+        Piszę, kombinuję i poprawiam dla Was przecinki. Jeżeli nie chcesz, żebym  robił to głodny i zaspany -
+        <span style="color: #99F675"><a href="https://buymeacoffee.com/0bkp" target="_blank"> postaw mi kawę! ☕</a>  </span> <br> <br>
+        Całą stronę piszę ręcznie, aby miała swój własny, unikalny styl i była dla Was jak najprzyjemniejsza w użyciu. 
+        Z tego powodu część funkcjonalności nie jest jeszcze gotowa. Zapewniam, że nie leniuchuję i stale nad tym pracuję. :) <br>
+        Dzięki za wyrozumiałość! <br>
+    </div>
+</footer>
+
+<script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js" defer></script><script type="speculationrules">
+{"prefetch":[{"source":"document","where":{"and":[{"href_matches":"/*"},{"not":{"href_matches":["/wp-*.php","/wp-admin/*","/wp-content/uploads/*","/wp-content/*","/wp-content/plugins/*","/wp-content/themes/latenightlogin/*","/*\\?(.+)"]}},{"not":{"selector_matches":"a[rel~=\"nofollow\"]"}},{"not":{"selector_matches":".no-prefetch, .no-prefetch a"}}]},"eagerness":"conservative"}]}
+</script>
+<script type="text/javascript" src="/wp-content/themes/latenightlogin/assets/main.js?ver=1751194528" id="main-js-js"></script>
+<script type="text/javascript" src="/wp-content/themes/latenightlogin/assets/src/library/js/bootstrap.min.js?ver=6.9.4" id="bootstrap-js-js"></script>
+<script type="text/javascript" id="searchbar-js-js-extra">
+/* <![CDATA[ */
+var ajaxsearch = {"ajaxurl":"/wp-admin/admin-ajax.php"};
+//# sourceURL=searchbar-js-js-extra
+/* ]]> */
+</script>
+<script type="text/javascript" src="/wp-content/themes/latenightlogin/assets/src/js/search-bar.js?ver=1751194528" id="searchbar-js-js"></script>
+<script type="text/javascript" src="/wp-content/themes/latenightlogin/assets/src/js/hamburger.js?ver=1751194528" id="hamburger-js-js"></script>
+<script type="text/javascript" src="/wp-content/themes/latenightlogin/assets/src/js/mobile-search-bar.js?ver=1751194528" id="mobile-searchbar-js-js"></script>
+<script type="text/javascript" src="/wp-content/themes/latenightlogin/assets/src/js/header-animation.js?ver=1751194528" id="header-animation-js-js"></script>
+<script type="text/javascript" id="newsletter-js-extra">
+/* <![CDATA[ */
+var newsletter_data = {"action_url":"/wp-admin/admin-ajax.php"};
+//# sourceURL=newsletter-js-extra
+/* ]]> */
+</script>
+<script type="text/javascript" src="/wp-content/plugins/newsletter/main.js?ver=8.8.7" id="newsletter-js"></script>
+<script id="wp-emoji-settings" type="application/json">
+{"baseUrl":"https://s.w.org/images/core/emoji/17.0.2/72x72/","ext":".png","svgUrl":"https://s.w.org/images/core/emoji/17.0.2/svg/","svgExt":".svg","source":{"concatemoji":"/wp-includes/js/wp-emoji-release.min.js?ver=6.9.4"}}
+</script>
+<script type="module">
+/* <![CDATA[ */
+/*! This file is auto-generated */
+const a=JSON.parse(document.getElementById("wp-emoji-settings").textContent),o=(window._wpemojiSettings=a,"wpEmojiSettingsSupports"),s=["flag","emoji"];function i(e){try{var t={supportTests:e,timestamp:(new Date).valueOf()};sessionStorage.setItem(o,JSON.stringify(t))}catch(e){}}function c(e,t,n){e.clearRect(0,0,e.canvas.width,e.canvas.height),e.fillText(t,0,0);t=new Uint32Array(e.getImageData(0,0,e.canvas.width,e.canvas.height).data);e.clearRect(0,0,e.canvas.width,e.canvas.height),e.fillText(n,0,0);const a=new Uint32Array(e.getImageData(0,0,e.canvas.width,e.canvas.height).data);return t.every((e,t)=>e===a[t])}function p(e,t){e.clearRect(0,0,e.canvas.width,e.canvas.height),e.fillText(t,0,0);var n=e.getImageData(16,16,1,1);for(let e=0;e<n.data.length;e++)if(0!==n.data[e])return!1;return!0}function u(e,t,n,a){switch(t){case"flag":return n(e,"\ud83c\udff3\ufe0f\u200d\u26a7\ufe0f","\ud83c\udff3\ufe0f\u200b\u26a7\ufe0f")?!1:!n(e,"\ud83c\udde8\ud83c\uddf6","\ud83c\udde8\u200b\ud83c\uddf6")&&!n(e,"\ud83c\udff4\udb40\udc67\udb40\udc62\udb40\udc65\udb40\udc6e\udb40\udc67\udb40\udc7f","\ud83c\udff4\u200b\udb40\udc67\u200b\udb40\udc62\u200b\udb40\udc65\u200b\udb40\udc6e\u200b\udb40\udc67\u200b\udb40\udc7f");case"emoji":return!a(e,"\ud83e\u1fac8")}return!1}function f(e,t,n,a){let r;const o=(r="undefined"!=typeof WorkerGlobalScope&&self instanceof WorkerGlobalScope?new OffscreenCanvas(300,150):document.createElement("canvas")).getContext("2d",{willReadFrequently:!0}),s=(o.textBaseline="top",o.font="600 32px Arial",{});return e.forEach(e=>{s[e]=t(o,e,n,a)}),s}function r(e){var t=document.createElement("script");t.src=e,t.defer=!0,document.head.appendChild(t)}a.supports={everything:!0,everythingExceptFlag:!0},new Promise(t=>{let n=function(){try{var e=JSON.parse(sessionStorage.getItem(o));if("object"==typeof e&&"number"==typeof e.timestamp&&(new Date).valueOf()<e.timestamp+604800&&"object"==typeof e.supportTests)return e.supportTests}catch(e){}return null}();if(!n){if("undefined"!=typeof Worker&&"undefined"!=typeof OffscreenCanvas&&"undefined"!=typeof URL&&URL.createObjectURL&&"undefined"!=typeof Blob)try{var e="postMessage("+f.toString()+"("+[JSON.stringify(s),u.toString(),c.toString(),p.toString()].join(",")+"));",a=new Blob([e],{type:"text/javascript"});const r=new Worker(URL.createObjectURL(a),{name:"wpTestEmojiSupports"});return void(r.onmessage=e=>{i(n=e.data),r.terminate(),t(n)})}catch(e){}i(n=f(s,u,c,p))}t(n)}).then(e=>{for(const n in e)a.supports[n]=e[n],a.supports.everything=a.supports.everything&&a.supports[n],"flag"!==n&&(a.supports.everythingExceptFlag=a.supports.everythingExceptFlag&&a.supports[n]);var t;a.supports.everythingExceptFlag=a.supports.everythingExceptFlag&&!a.supports.flag,a.supports.everything||((t=a.source||{}).concatemoji?r(t.concatemoji):t.wpemoji&&t.twemoji&&(r(t.twemoji),r(t.wpemoji)))});
+//# sourceURL=/wp-includes/js/wp-emoji-loader.min.js
+/* ]]> */
+</script>
+</div></body>
+</html>

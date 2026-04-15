@@ -1,0 +1,771 @@
+<!DOCTYPE html>
+<html lang="lang=" pl-pl>
+<head><meta charset="UTF-8">
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="icon" href="/wp-content/themes/latenightlogin/assets/src/img/lnl-logo.png" type="image/x-icon">
+    <link rel="preconnect" href="https://fonts.googleapis.com/">
+    <link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Courier+Prime:ital,wght@0,400;0,700;1,400;1,700&amp;family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&amp;family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&amp;family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&amp;family=Roboto:ital,wght@0,100..900;1,100..900&amp;display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <meta name="description" content="W prosty sposób opisujemy zawiły świat cyberbezpieczeństwa. Poradniki, recenzje, ciekawostki i wiele więcej!">
+    <meta name="robots" content="max-image-preview:large">
+<link rel="dns-prefetch" href="//www.googletagmanager.com">
+<link rel="dns-prefetch" href="//pagead2.googlesyndication.com">
+<link rel="alternate" type="application/rss+xml" title="Late Night Login » Rejestry procesora i komendy Asemblera, czyli mów językiem komputera! Kanał z komentarzami" href="/2025/06/rejestry-procesora-i-komendy-assemblera/feed/">
+<link rel="alternate" title="oEmbed (JSON)" type="application/json+oembed" href="/wp-json/oembed/1.0/embed?url=%2F2025%2F06%2Frejestry-procesora-i-komendy-assemblera%2F">
+<link rel="alternate" title="oEmbed (XML)" type="text/xml+oembed" href="/wp-json/oembed/1.0/embed?url=%2F2025%2F06%2Frejestry-procesora-i-komendy-assemblera%2F&amp;format=xml">
+<style id="wp-img-auto-sizes-contain-inline-css" type="text/css">
+img:is([sizes=auto i],[sizes^="auto," i]){contain-intrinsic-size:3000px 1500px}
+/*# sourceURL=wp-img-auto-sizes-contain-inline-css */
+</style>
+<style id="wp-emoji-styles-inline-css" type="text/css">
+
+	img.wp-smiley, img.emoji {
+		display: inline !important;
+		border: none !important;
+		box-shadow: none !important;
+		height: 1em !important;
+		width: 1em !important;
+		margin: 0 0.07em !important;
+		vertical-align: -0.1em !important;
+		background: none !important;
+		padding: 0 !important;
+	}
+/*# sourceURL=wp-emoji-styles-inline-css */
+</style>
+<style id="wp-block-library-inline-css" type="text/css">
+:root{--wp-block-synced-color:#7a00df;--wp-block-synced-color--rgb:122,0,223;--wp-bound-block-color:var(--wp-block-synced-color);--wp-editor-canvas-background:#ddd;--wp-admin-theme-color:#007cba;--wp-admin-theme-color--rgb:0,124,186;--wp-admin-theme-color-darker-10:#006ba1;--wp-admin-theme-color-darker-10--rgb:0,107,160.5;--wp-admin-theme-color-darker-20:#005a87;--wp-admin-theme-color-darker-20--rgb:0,90,135;--wp-admin-border-width-focus:2px}@media (min-resolution:192dpi){:root{--wp-admin-border-width-focus:1.5px}}.wp-element-button{cursor:pointer}:root .has-very-light-gray-background-color{background-color:#eee}:root .has-very-dark-gray-background-color{background-color:#313131}:root .has-very-light-gray-color{color:#eee}:root .has-very-dark-gray-color{color:#313131}:root .has-vivid-green-cyan-to-vivid-cyan-blue-gradient-background{background:linear-gradient(135deg,#00d084,#0693e3)}:root .has-purple-crush-gradient-background{background:linear-gradient(135deg,#34e2e4,#4721fb 50%,#ab1dfe)}:root .has-hazy-dawn-gradient-background{background:linear-gradient(135deg,#faaca8,#dad0ec)}:root .has-subdued-olive-gradient-background{background:linear-gradient(135deg,#fafae1,#67a671)}:root .has-atomic-cream-gradient-background{background:linear-gradient(135deg,#fdd79a,#004a59)}:root .has-nightshade-gradient-background{background:linear-gradient(135deg,#330968,#31cdcf)}:root .has-midnight-gradient-background{background:linear-gradient(135deg,#020381,#2874fc)}:root{--wp--preset--font-size--normal:16px;--wp--preset--font-size--huge:42px}.has-regular-font-size{font-size:1em}.has-larger-font-size{font-size:2.625em}.has-normal-font-size{font-size:var(--wp--preset--font-size--normal)}.has-huge-font-size{font-size:var(--wp--preset--font-size--huge)}.has-text-align-center{text-align:center}.has-text-align-left{text-align:left}.has-text-align-right{text-align:right}.has-fit-text{white-space:nowrap!important}#end-resizable-editor-section{display:none}.aligncenter{clear:both}.items-justified-left{justify-content:flex-start}.items-justified-center{justify-content:center}.items-justified-right{justify-content:flex-end}.items-justified-space-between{justify-content:space-between}.screen-reader-text{border:0;clip-path:inset(50%);height:1px;margin:-1px;overflow:hidden;padding:0;position:absolute;width:1px;word-wrap:normal!important}.screen-reader-text:focus{background-color:#ddd;clip-path:none;color:#444;display:block;font-size:1em;height:auto;left:5px;line-height:normal;padding:15px 23px 14px;text-decoration:none;top:5px;width:auto;z-index:100000}html :where(.has-border-color){border-style:solid}html :where([style*=border-top-color]){border-top-style:solid}html :where([style*=border-right-color]){border-right-style:solid}html :where([style*=border-bottom-color]){border-bottom-style:solid}html :where([style*=border-left-color]){border-left-style:solid}html :where([style*=border-width]){border-style:solid}html :where([style*=border-top-width]){border-top-style:solid}html :where([style*=border-right-width]){border-right-style:solid}html :where([style*=border-bottom-width]){border-bottom-style:solid}html :where([style*=border-left-width]){border-left-style:solid}html :where(img[class*=wp-image-]){height:auto;max-width:100%}:where(figure){margin:0 0 1em}html :where(.is-position-sticky){--wp-admin--admin-bar--position-offset:var(--wp-admin--admin-bar--height,0px)}@media screen and (max-width:600px){html :where(.is-position-sticky){--wp-admin--admin-bar--position-offset:0px}}
+
+/*# sourceURL=wp-block-library-inline-css */
+</style>
+<style id="wp-block-image-inline-css" type="text/css">
+.wp-block-image>a,.wp-block-image>figure>a{display:inline-block}.wp-block-image img{box-sizing:border-box;height:auto;max-width:100%;vertical-align:bottom}@media not (prefers-reduced-motion){.wp-block-image img.hide{visibility:hidden}.wp-block-image img.show{animation:show-content-image .4s}}.wp-block-image[style*=border-radius] img,.wp-block-image[style*=border-radius]>a{border-radius:inherit}.wp-block-image.has-custom-border img{box-sizing:border-box}.wp-block-image.aligncenter{text-align:center}.wp-block-image.alignfull>a,.wp-block-image.alignwide>a{width:100%}.wp-block-image.alignfull img,.wp-block-image.alignwide img{height:auto;width:100%}.wp-block-image .aligncenter,.wp-block-image .alignleft,.wp-block-image .alignright,.wp-block-image.aligncenter,.wp-block-image.alignleft,.wp-block-image.alignright{display:table}.wp-block-image .aligncenter>figcaption,.wp-block-image .alignleft>figcaption,.wp-block-image .alignright>figcaption,.wp-block-image.aligncenter>figcaption,.wp-block-image.alignleft>figcaption,.wp-block-image.alignright>figcaption{caption-side:bottom;display:table-caption}.wp-block-image .alignleft{float:left;margin:.5em 1em .5em 0}.wp-block-image .alignright{float:right;margin:.5em 0 .5em 1em}.wp-block-image .aligncenter{margin-left:auto;margin-right:auto}.wp-block-image :where(figcaption){margin-bottom:1em;margin-top:.5em}.wp-block-image.is-style-circle-mask img{border-radius:9999px}@supports ((-webkit-mask-image:none) or (mask-image:none)) or (-webkit-mask-image:none){.wp-block-image.is-style-circle-mask img{border-radius:0;-webkit-mask-image:url('data:image/svg+xml;utf8,<svg viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg"><circle cx="50" cy="50" r="50"/>');mask-image:url('data:image/svg+xml;utf8,<svg viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg"><circle cx="50" cy="50" r="50"/>');mask-mode:alpha;-webkit-mask-position:center;mask-position:center;-webkit-mask-repeat:no-repeat;mask-repeat:no-repeat;-webkit-mask-size:contain;mask-size:contain}}:root :where(.wp-block-image.is-style-rounded img,.wp-block-image .is-style-rounded img){border-radius:9999px}.wp-block-image figure{margin:0}.wp-lightbox-container{display:flex;flex-direction:column;position:relative}.wp-lightbox-container img{cursor:zoom-in}.wp-lightbox-container img:hover+button{opacity:1}.wp-lightbox-container button{align-items:center;backdrop-filter:blur(16px) saturate(180%);background-color:#5a5a5a40;border:none;border-radius:4px;cursor:zoom-in;display:flex;height:20px;justify-content:center;opacity:0;padding:0;position:absolute;right:16px;text-align:center;top:16px;width:20px;z-index:100}@media not (prefers-reduced-motion){.wp-lightbox-container button{transition:opacity .2s ease}}.wp-lightbox-container button:focus-visible{outline:3px auto #5a5a5a40;outline:3px auto -webkit-focus-ring-color;outline-offset:3px}.wp-lightbox-container button:hover{cursor:pointer;opacity:1}.wp-lightbox-container button:focus{opacity:1}.wp-lightbox-container button:focus,.wp-lightbox-container button:hover,.wp-lightbox-container button:not(:hover):not(:active):not(.has-background){background-color:#5a5a5a40;border:none}.wp-lightbox-overlay{box-sizing:border-box;cursor:zoom-out;height:100vh;left:0;overflow:hidden;position:fixed;top:0;visibility:hidden;width:100%;z-index:100000}.wp-lightbox-overlay .close-button{align-items:center;cursor:pointer;display:flex;justify-content:center;min-height:40px;min-width:40px;padding:0;position:absolute;right:calc(env(safe-area-inset-right) + 16px);top:calc(env(safe-area-inset-top) + 16px);z-index:5000000}.wp-lightbox-overlay .close-button:focus,.wp-lightbox-overlay .close-button:hover,.wp-lightbox-overlay .close-button:not(:hover):not(:active):not(.has-background){background:none;border:none}.wp-lightbox-overlay .lightbox-image-container{height:var(--wp--lightbox-container-height);left:50%;overflow:hidden;position:absolute;top:50%;transform:translate(-50%,-50%);transform-origin:top left;width:var(--wp--lightbox-container-width);z-index:9999999999}.wp-lightbox-overlay .wp-block-image{align-items:center;box-sizing:border-box;display:flex;height:100%;justify-content:center;margin:0;position:relative;transform-origin:0 0;width:100%;z-index:3000000}.wp-lightbox-overlay .wp-block-image img{height:var(--wp--lightbox-image-height);min-height:var(--wp--lightbox-image-height);min-width:var(--wp--lightbox-image-width);width:var(--wp--lightbox-image-width)}.wp-lightbox-overlay .wp-block-image figcaption{display:none}.wp-lightbox-overlay button{background:none;border:none}.wp-lightbox-overlay .scrim{background-color:#fff;height:100%;opacity:.9;position:absolute;width:100%;z-index:2000000}.wp-lightbox-overlay.active{visibility:visible}@media not (prefers-reduced-motion){.wp-lightbox-overlay.active{animation:turn-on-visibility .25s both}.wp-lightbox-overlay.active img{animation:turn-on-visibility .35s both}.wp-lightbox-overlay.show-closing-animation:not(.active){animation:turn-off-visibility .35s both}.wp-lightbox-overlay.show-closing-animation:not(.active) img{animation:turn-off-visibility .25s both}.wp-lightbox-overlay.zoom.active{animation:none;opacity:1;visibility:visible}.wp-lightbox-overlay.zoom.active .lightbox-image-container{animation:lightbox-zoom-in .4s}.wp-lightbox-overlay.zoom.active .lightbox-image-container img{animation:none}.wp-lightbox-overlay.zoom.active .scrim{animation:turn-on-visibility .4s forwards}.wp-lightbox-overlay.zoom.show-closing-animation:not(.active){animation:none}.wp-lightbox-overlay.zoom.show-closing-animation:not(.active) .lightbox-image-container{animation:lightbox-zoom-out .4s}.wp-lightbox-overlay.zoom.show-closing-animation:not(.active) .lightbox-image-container img{animation:none}.wp-lightbox-overlay.zoom.show-closing-animation:not(.active) .scrim{animation:turn-off-visibility .4s forwards}}@keyframes show-content-image{0%{visibility:hidden}99%{visibility:hidden}to{visibility:visible}}@keyframes turn-on-visibility{0%{opacity:0}to{opacity:1}}@keyframes turn-off-visibility{0%{opacity:1;visibility:visible}99%{opacity:0;visibility:visible}to{opacity:0;visibility:hidden}}@keyframes lightbox-zoom-in{0%{transform:translate(calc((-100vw + var(--wp--lightbox-scrollbar-width))/2 + var(--wp--lightbox-initial-left-position)),calc(-50vh + var(--wp--lightbox-initial-top-position))) scale(var(--wp--lightbox-scale))}to{transform:translate(-50%,-50%) scale(1)}}@keyframes lightbox-zoom-out{0%{transform:translate(-50%,-50%) scale(1);visibility:visible}99%{visibility:visible}to{transform:translate(calc((-100vw + var(--wp--lightbox-scrollbar-width))/2 + var(--wp--lightbox-initial-left-position)),calc(-50vh + var(--wp--lightbox-initial-top-position))) scale(var(--wp--lightbox-scale));visibility:hidden}}
+/*# sourceURL=/wp-includes/blocks/image/style.min.css */
+</style>
+<style id="wp-block-list-inline-css" type="text/css">
+ol,ul{box-sizing:border-box}:root :where(.wp-block-list.has-background){padding:1.25em 2.375em}
+/*# sourceURL=/wp-includes/blocks/list/style.min.css */
+</style>
+<style id="wp-block-paragraph-inline-css" type="text/css">
+.is-small-text{font-size:.875em}.is-regular-text{font-size:1em}.is-large-text{font-size:2.25em}.is-larger-text{font-size:3em}.has-drop-cap:not(:focus):first-letter{float:left;font-size:8.4em;font-style:normal;font-weight:100;line-height:.68;margin:.05em .1em 0 0;text-transform:uppercase}body.rtl .has-drop-cap:not(:focus):first-letter{float:none;margin-left:.1em}p.has-drop-cap.has-background{overflow:hidden}:root :where(p.has-background){padding:1.25em 2.375em}:where(p.has-text-color:not(.has-link-color)) a{color:inherit}p.has-text-align-left[style*="writing-mode:vertical-lr"],p.has-text-align-right[style*="writing-mode:vertical-rl"]{rotate:180deg}
+/*# sourceURL=/wp-includes/blocks/paragraph/style.min.css */
+</style>
+<style id="wp-block-table-inline-css" type="text/css">
+.wp-block-table{overflow-x:auto}.wp-block-table table{border-collapse:collapse;width:100%}.wp-block-table thead{border-bottom:3px solid}.wp-block-table tfoot{border-top:3px solid}.wp-block-table td,.wp-block-table th{border:1px solid;padding:.5em}.wp-block-table .has-fixed-layout{table-layout:fixed;width:100%}.wp-block-table .has-fixed-layout td,.wp-block-table .has-fixed-layout th{word-break:break-word}.wp-block-table.aligncenter,.wp-block-table.alignleft,.wp-block-table.alignright{display:table;width:auto}.wp-block-table.aligncenter td,.wp-block-table.aligncenter th,.wp-block-table.alignleft td,.wp-block-table.alignleft th,.wp-block-table.alignright td,.wp-block-table.alignright th{word-break:break-word}.wp-block-table .has-subtle-light-gray-background-color{background-color:#f3f4f5}.wp-block-table .has-subtle-pale-green-background-color{background-color:#e9fbe5}.wp-block-table .has-subtle-pale-blue-background-color{background-color:#e7f5fe}.wp-block-table .has-subtle-pale-pink-background-color{background-color:#fcf0ef}.wp-block-table.is-style-stripes{background-color:initial;border-collapse:inherit;border-spacing:0}.wp-block-table.is-style-stripes tbody tr:nth-child(odd){background-color:#f0f0f0}.wp-block-table.is-style-stripes.has-subtle-light-gray-background-color tbody tr:nth-child(odd){background-color:#f3f4f5}.wp-block-table.is-style-stripes.has-subtle-pale-green-background-color tbody tr:nth-child(odd){background-color:#e9fbe5}.wp-block-table.is-style-stripes.has-subtle-pale-blue-background-color tbody tr:nth-child(odd){background-color:#e7f5fe}.wp-block-table.is-style-stripes.has-subtle-pale-pink-background-color tbody tr:nth-child(odd){background-color:#fcf0ef}.wp-block-table.is-style-stripes td,.wp-block-table.is-style-stripes th{border-color:#0000}.wp-block-table.is-style-stripes{border-bottom:1px solid #f0f0f0}.wp-block-table .has-border-color td,.wp-block-table .has-border-color th,.wp-block-table .has-border-color tr,.wp-block-table .has-border-color>*{border-color:inherit}.wp-block-table table[style*=border-top-color] tr:first-child,.wp-block-table table[style*=border-top-color] tr:first-child td,.wp-block-table table[style*=border-top-color] tr:first-child th,.wp-block-table table[style*=border-top-color]>*,.wp-block-table table[style*=border-top-color]>* td,.wp-block-table table[style*=border-top-color]>* th{border-top-color:inherit}.wp-block-table table[style*=border-top-color] tr:not(:first-child){border-top-color:initial}.wp-block-table table[style*=border-right-color] td:last-child,.wp-block-table table[style*=border-right-color] th,.wp-block-table table[style*=border-right-color] tr,.wp-block-table table[style*=border-right-color]>*{border-right-color:inherit}.wp-block-table table[style*=border-bottom-color] tr:last-child,.wp-block-table table[style*=border-bottom-color] tr:last-child td,.wp-block-table table[style*=border-bottom-color] tr:last-child th,.wp-block-table table[style*=border-bottom-color]>*,.wp-block-table table[style*=border-bottom-color]>* td,.wp-block-table table[style*=border-bottom-color]>* th{border-bottom-color:inherit}.wp-block-table table[style*=border-bottom-color] tr:not(:last-child){border-bottom-color:initial}.wp-block-table table[style*=border-left-color] td:first-child,.wp-block-table table[style*=border-left-color] th,.wp-block-table table[style*=border-left-color] tr,.wp-block-table table[style*=border-left-color]>*{border-left-color:inherit}.wp-block-table table[style*=border-style] td,.wp-block-table table[style*=border-style] th,.wp-block-table table[style*=border-style] tr,.wp-block-table table[style*=border-style]>*{border-style:inherit}.wp-block-table table[style*=border-width] td,.wp-block-table table[style*=border-width] th,.wp-block-table table[style*=border-width] tr,.wp-block-table table[style*=border-width]>*{border-style:inherit;border-width:inherit}
+/*# sourceURL=/wp-includes/blocks/table/style.min.css */
+</style>
+
+<style id="classic-theme-styles-inline-css" type="text/css">
+/*! This file is auto-generated */
+.wp-block-button__link{color:#fff;background-color:#32373c;border-radius:9999px;box-shadow:none;text-decoration:none;padding:calc(.667em + 2px) calc(1.333em + 2px);font-size:1.125em}.wp-block-file__button{background:#32373c;color:#fff;text-decoration:none}
+/*# sourceURL=/wp-includes/css/classic-themes.min.css */
+</style>
+<style id="global-styles-inline-css" type="text/css">
+:root{--wp--preset--aspect-ratio--square: 1;--wp--preset--aspect-ratio--4-3: 4/3;--wp--preset--aspect-ratio--3-4: 3/4;--wp--preset--aspect-ratio--3-2: 3/2;--wp--preset--aspect-ratio--2-3: 2/3;--wp--preset--aspect-ratio--16-9: 16/9;--wp--preset--aspect-ratio--9-16: 9/16;--wp--preset--color--black: #000000;--wp--preset--color--cyan-bluish-gray: #abb8c3;--wp--preset--color--white: #ffffff;--wp--preset--color--pale-pink: #f78da7;--wp--preset--color--vivid-red: #cf2e2e;--wp--preset--color--luminous-vivid-orange: #ff6900;--wp--preset--color--luminous-vivid-amber: #fcb900;--wp--preset--color--light-green-cyan: #7bdcb5;--wp--preset--color--vivid-green-cyan: #00d084;--wp--preset--color--pale-cyan-blue: #8ed1fc;--wp--preset--color--vivid-cyan-blue: #0693e3;--wp--preset--color--vivid-purple: #9b51e0;--wp--preset--gradient--vivid-cyan-blue-to-vivid-purple: linear-gradient(135deg,rgb(6,147,227) 0%,rgb(155,81,224) 100%);--wp--preset--gradient--light-green-cyan-to-vivid-green-cyan: linear-gradient(135deg,rgb(122,220,180) 0%,rgb(0,208,130) 100%);--wp--preset--gradient--luminous-vivid-amber-to-luminous-vivid-orange: linear-gradient(135deg,rgb(252,185,0) 0%,rgb(255,105,0) 100%);--wp--preset--gradient--luminous-vivid-orange-to-vivid-red: linear-gradient(135deg,rgb(255,105,0) 0%,rgb(207,46,46) 100%);--wp--preset--gradient--very-light-gray-to-cyan-bluish-gray: linear-gradient(135deg,rgb(238,238,238) 0%,rgb(169,184,195) 100%);--wp--preset--gradient--cool-to-warm-spectrum: linear-gradient(135deg,rgb(74,234,220) 0%,rgb(151,120,209) 20%,rgb(207,42,186) 40%,rgb(238,44,130) 60%,rgb(251,105,98) 80%,rgb(254,248,76) 100%);--wp--preset--gradient--blush-light-purple: linear-gradient(135deg,rgb(255,206,236) 0%,rgb(152,150,240) 100%);--wp--preset--gradient--blush-bordeaux: linear-gradient(135deg,rgb(254,205,165) 0%,rgb(254,45,45) 50%,rgb(107,0,62) 100%);--wp--preset--gradient--luminous-dusk: linear-gradient(135deg,rgb(255,203,112) 0%,rgb(199,81,192) 50%,rgb(65,88,208) 100%);--wp--preset--gradient--pale-ocean: linear-gradient(135deg,rgb(255,245,203) 0%,rgb(182,227,212) 50%,rgb(51,167,181) 100%);--wp--preset--gradient--electric-grass: linear-gradient(135deg,rgb(202,248,128) 0%,rgb(113,206,126) 100%);--wp--preset--gradient--midnight: linear-gradient(135deg,rgb(2,3,129) 0%,rgb(40,116,252) 100%);--wp--preset--font-size--small: 13px;--wp--preset--font-size--medium: 20px;--wp--preset--font-size--large: 36px;--wp--preset--font-size--x-large: 42px;--wp--preset--spacing--20: 0.44rem;--wp--preset--spacing--30: 0.67rem;--wp--preset--spacing--40: 1rem;--wp--preset--spacing--50: 1.5rem;--wp--preset--spacing--60: 2.25rem;--wp--preset--spacing--70: 3.38rem;--wp--preset--spacing--80: 5.06rem;--wp--preset--shadow--natural: 6px 6px 9px rgba(0, 0, 0, 0.2);--wp--preset--shadow--deep: 12px 12px 50px rgba(0, 0, 0, 0.4);--wp--preset--shadow--sharp: 6px 6px 0px rgba(0, 0, 0, 0.2);--wp--preset--shadow--outlined: 6px 6px 0px -3px rgb(255, 255, 255), 6px 6px rgb(0, 0, 0);--wp--preset--shadow--crisp: 6px 6px 0px rgb(0, 0, 0);}:where(.is-layout-flex){gap: 0.5em;}:where(.is-layout-grid){gap: 0.5em;}body .is-layout-flex{display: flex;}.is-layout-flex{flex-wrap: wrap;align-items: center;}.is-layout-flex > :is(*, div){margin: 0;}body .is-layout-grid{display: grid;}.is-layout-grid > :is(*, div){margin: 0;}:where(.wp-block-columns.is-layout-flex){gap: 2em;}:where(.wp-block-columns.is-layout-grid){gap: 2em;}:where(.wp-block-post-template.is-layout-flex){gap: 1.25em;}:where(.wp-block-post-template.is-layout-grid){gap: 1.25em;}.has-black-color{color: var(--wp--preset--color--black) !important;}.has-cyan-bluish-gray-color{color: var(--wp--preset--color--cyan-bluish-gray) !important;}.has-white-color{color: var(--wp--preset--color--white) !important;}.has-pale-pink-color{color: var(--wp--preset--color--pale-pink) !important;}.has-vivid-red-color{color: var(--wp--preset--color--vivid-red) !important;}.has-luminous-vivid-orange-color{color: var(--wp--preset--color--luminous-vivid-orange) !important;}.has-luminous-vivid-amber-color{color: var(--wp--preset--color--luminous-vivid-amber) !important;}.has-light-green-cyan-color{color: var(--wp--preset--color--light-green-cyan) !important;}.has-vivid-green-cyan-color{color: var(--wp--preset--color--vivid-green-cyan) !important;}.has-pale-cyan-blue-color{color: var(--wp--preset--color--pale-cyan-blue) !important;}.has-vivid-cyan-blue-color{color: var(--wp--preset--color--vivid-cyan-blue) !important;}.has-vivid-purple-color{color: var(--wp--preset--color--vivid-purple) !important;}.has-black-background-color{background-color: var(--wp--preset--color--black) !important;}.has-cyan-bluish-gray-background-color{background-color: var(--wp--preset--color--cyan-bluish-gray) !important;}.has-white-background-color{background-color: var(--wp--preset--color--white) !important;}.has-pale-pink-background-color{background-color: var(--wp--preset--color--pale-pink) !important;}.has-vivid-red-background-color{background-color: var(--wp--preset--color--vivid-red) !important;}.has-luminous-vivid-orange-background-color{background-color: var(--wp--preset--color--luminous-vivid-orange) !important;}.has-luminous-vivid-amber-background-color{background-color: var(--wp--preset--color--luminous-vivid-amber) !important;}.has-light-green-cyan-background-color{background-color: var(--wp--preset--color--light-green-cyan) !important;}.has-vivid-green-cyan-background-color{background-color: var(--wp--preset--color--vivid-green-cyan) !important;}.has-pale-cyan-blue-background-color{background-color: var(--wp--preset--color--pale-cyan-blue) !important;}.has-vivid-cyan-blue-background-color{background-color: var(--wp--preset--color--vivid-cyan-blue) !important;}.has-vivid-purple-background-color{background-color: var(--wp--preset--color--vivid-purple) !important;}.has-black-border-color{border-color: var(--wp--preset--color--black) !important;}.has-cyan-bluish-gray-border-color{border-color: var(--wp--preset--color--cyan-bluish-gray) !important;}.has-white-border-color{border-color: var(--wp--preset--color--white) !important;}.has-pale-pink-border-color{border-color: var(--wp--preset--color--pale-pink) !important;}.has-vivid-red-border-color{border-color: var(--wp--preset--color--vivid-red) !important;}.has-luminous-vivid-orange-border-color{border-color: var(--wp--preset--color--luminous-vivid-orange) !important;}.has-luminous-vivid-amber-border-color{border-color: var(--wp--preset--color--luminous-vivid-amber) !important;}.has-light-green-cyan-border-color{border-color: var(--wp--preset--color--light-green-cyan) !important;}.has-vivid-green-cyan-border-color{border-color: var(--wp--preset--color--vivid-green-cyan) !important;}.has-pale-cyan-blue-border-color{border-color: var(--wp--preset--color--pale-cyan-blue) !important;}.has-vivid-cyan-blue-border-color{border-color: var(--wp--preset--color--vivid-cyan-blue) !important;}.has-vivid-purple-border-color{border-color: var(--wp--preset--color--vivid-purple) !important;}.has-vivid-cyan-blue-to-vivid-purple-gradient-background{background: var(--wp--preset--gradient--vivid-cyan-blue-to-vivid-purple) !important;}.has-light-green-cyan-to-vivid-green-cyan-gradient-background{background: var(--wp--preset--gradient--light-green-cyan-to-vivid-green-cyan) !important;}.has-luminous-vivid-amber-to-luminous-vivid-orange-gradient-background{background: var(--wp--preset--gradient--luminous-vivid-amber-to-luminous-vivid-orange) !important;}.has-luminous-vivid-orange-to-vivid-red-gradient-background{background: var(--wp--preset--gradient--luminous-vivid-orange-to-vivid-red) !important;}.has-very-light-gray-to-cyan-bluish-gray-gradient-background{background: var(--wp--preset--gradient--very-light-gray-to-cyan-bluish-gray) !important;}.has-cool-to-warm-spectrum-gradient-background{background: var(--wp--preset--gradient--cool-to-warm-spectrum) !important;}.has-blush-light-purple-gradient-background{background: var(--wp--preset--gradient--blush-light-purple) !important;}.has-blush-bordeaux-gradient-background{background: var(--wp--preset--gradient--blush-bordeaux) !important;}.has-luminous-dusk-gradient-background{background: var(--wp--preset--gradient--luminous-dusk) !important;}.has-pale-ocean-gradient-background{background: var(--wp--preset--gradient--pale-ocean) !important;}.has-electric-grass-gradient-background{background: var(--wp--preset--gradient--electric-grass) !important;}.has-midnight-gradient-background{background: var(--wp--preset--gradient--midnight) !important;}.has-small-font-size{font-size: var(--wp--preset--font-size--small) !important;}.has-medium-font-size{font-size: var(--wp--preset--font-size--medium) !important;}.has-large-font-size{font-size: var(--wp--preset--font-size--large) !important;}.has-x-large-font-size{font-size: var(--wp--preset--font-size--x-large) !important;}
+/*# sourceURL=global-styles-inline-css */
+</style>
+
+<link rel="stylesheet" id="bootstrap-css-css" href="/wp-content/themes/latenightlogin/assets/src/library/css/bootstrap.min.css?ver=6.9.4" type="text/css" media="all">
+<link rel="stylesheet" id="style-css-css" href="/wp-content/themes/latenightlogin/style.css?ver=1751194528" type="text/css" media="all">
+<link rel="stylesheet" id="newsletter-css" href="/wp-content/plugins/newsletter/style.css?ver=8.8.7" type="text/css" media="all">
+<script type="text/javascript" src="/wp-includes/js/jquery/jquery.min.js?ver=3.7.1" id="jquery-core-js"></script>
+<script type="text/javascript" src="/wp-includes/js/jquery/jquery-migrate.min.js?ver=3.4.1" id="jquery-migrate-js"></script>
+
+<!-- Fragment znacznika Google (gtag.js) dodany przez Site Kit -->
+<!-- Fragment Google Analytics dodany przez Site Kit -->
+<script type="text/javascript" src="https://www.googletagmanager.com/gtag/js?id=GT-M39VBDNG" id="google_gtagjs-js" async></script>
+<script type="text/javascript" id="google_gtagjs-js-after">
+/* <![CDATA[ */
+window.dataLayer = window.dataLayer || [];function gtag(){dataLayer.push(arguments);}
+gtag("set","linker",{"domains":["latenightlogin.com"]});
+gtag("js", new Date());
+gtag("set", "developer_id.dZTNiMT", true);
+gtag("config", "GT-M39VBDNG");
+ window._googlesitekit = window._googlesitekit || {}; window._googlesitekit.throttledEvents = []; window._googlesitekit.gtagEvent = (name, data) => { var key = JSON.stringify( { name, data } ); if ( !! window._googlesitekit.throttledEvents[ key ] ) { return; } window._googlesitekit.throttledEvents[ key ] = true; setTimeout( () => { delete window._googlesitekit.throttledEvents[ key ]; }, 5 ); gtag( "event", name, { ...data, event_source: "site-kit" } ); }; 
+//# sourceURL=google_gtagjs-js-after
+/* ]]> */
+</script>
+<link rel="https://api.w.org/" href="/wp-json/"><link rel="alternate" title="JSON" type="application/json" href="/wp-json/wp/v2/posts/936"><link rel="EditURI" type="application/rsd+xml" title="RSD" href="/xmlrpc.php?rsd">
+<meta name="generator" content="WordPress 6.9.4">
+<link rel="canonical" href="/2025/06/rejestry-procesora-i-komendy-assemblera/">
+<link rel="shortlink" href="/?p=936">
+<meta name="generator" content="Site Kit by Google 1.176.0">
+<!-- Znaczniki meta Google AdSense dodane przez Site Kit -->
+<meta name="google-adsense-platform-account" content="ca-host-pub-2644536267352236">
+<meta name="google-adsense-platform-domain" content="sitekit.withgoogle.com">
+<!-- Zakończ dodawanie meta znaczników Google AdSense przez Site Kit -->
+
+<!-- Fragment Google AdSense dodany przez Site Kit -->
+<script type="text/javascript" async="async" src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-9614501413012631&amp;host=ca-host-pub-2644536267352236" crossorigin="anonymous"></script>
+
+<!-- Zakończ fragment Google AdSense dodany przez Site Kit -->
+<link rel="icon" href="/wp-content/uploads/2025/05/cropped-miniature-corners-32x32.png" sizes="32x32">
+<link rel="icon" href="/wp-content/uploads/2025/05/cropped-miniature-corners-192x192.png" sizes="192x192">
+<link rel="apple-touch-icon" href="/wp-content/uploads/2025/05/cropped-miniature-corners-180x180.png">
+<meta name="msapplication-TileImage" content="/wp-content/uploads/2025/05/cropped-miniature-corners-270x270.png">
+    <title>Late Night Login</title>
+</head>
+
+<body class="wp-singular post-template-default single single-post postid-936 single-format-standard wp-theme-latenightlogin">
+    
+<header>
+    
+<nav class="navbar">
+    <a href="/">
+        <div class="logo">
+            <img class="logo-desktop" src="/wp-content/themes/latenightlogin/assets/src/img/lnl-logo.png" alt="Logo">
+            <img class="logo-mobile" src="/wp-content/themes/latenightlogin/assets/src/img/logo-mobile.png" alt="Logo">
+        </div>
+    </a>
+
+    <div class="hamburger" id="hamburger" onclick="toggleMenu()"> </div>
+
+    <div class="menu" id="navbarMenu">
+        <a href="/" id="nav-home">
+            <div class="nav-button">
+                STRONA GŁÓWNA
+            </div>
+        </a>
+        <a href="#categories-section" id="nav-categories">
+            <div class="nav-button">
+                KATEGORIE
+            </div>
+        </a>
+        <a href="/about/" id="nav-about">
+            <div class="nav-button" id="nav-about">
+                O NAS
+            </div>
+        </a>
+        <a href="/contact/" id="nav-contact">
+            <div class="nav-button">
+                KONTAKT
+            </div>
+        </a>
+    </div>
+
+</nav></header>
+
+<div class="container">
+    <div class="meta-info" style="margin-top: 80px;">
+        <span class="post-category"> <ul class="post-categories">
+	<li><a href="/category/podstawy-informatyki-pl/" rel="category tag">Podstawy informatyki</a></li></ul> </span>
+        <span class="post-date"> 08 czerwca 2025 </span>
+    </div>
+    <div class="single-post-header animated-header js-hidden">
+        <span class="typing-text"> Rejestry procesora i komendy Asemblera, czyli mów językiem komputera! </span>
+    </div>
+
+    <div class="single-post-content">
+        
+<p>Każdy komputer posługuje się językiem, którego alfabet składa się jedynie z dwóch znaków: 0 i 1. Wszystkie Twoje programy, czy jest to proste „Witaj świecie”, czy złożone oprogramowanie, zostają na koniec zredukowane do ciągu zer i jedynek, w procesie zwanym <code>kompilacją</code>.</p>
+
+
+
+<p>Wszystkie języki programowania, czy to wysokopoziomowy Python, czy niskopoziomowy C, zostały zaprojektowane z myślą o ludziach, którzy lepiej radzą sobie z tekstem niż z systemem binarnym. Jednak nasze zrozumiałe języki programowania nie oddają w zupełności tego, co tak naprawdę robi procesor.</p>
+
+
+
+<p>Dlatego właśnie używa się <code>asemblerów</code> – niskopoziomowych języków programowania, których zaletą jest wysoka zgodność między ich instrukcjami a instrukcjami kodu maszynowego. Innymi słowy, Asembler dosyć wiernie oddaje to, w jaki sposób działa procesor.</p>
+
+
+
+<p>Jest to szczególnie przydatne dla pentesterów, dla których liczy się pełna kontrola nad kodem lub zrozumienie działania cudzych programów w celu odnalezienia podatności.</p>
+
+
+
+<p>W tym wpisie pokażę Ci, czym są rejestry procesora i jak działają najczęściej używane instrukcje Asemblera — byś mógł lepiej zrozumieć, co naprawdę dzieje się wewnątrz Twojego komputera. Ale najpierw…</p>
+
+
+
+<h3> Dlaczego to ważne? </h3>
+
+
+
+<p>Zrozumienie działania binariów na poziomie asemblera i ELF ma kluczowe znaczenie w bezpieczeństwie aplikacji. Dzięki niskopoziomowemu zrozumieniu programu możemy modyfikować jego zachowanie bez dostępu do kodu źródłowego (np. usuwać sprawdzanie haseł, czy zmieniać komunikaty). Dodatkowo, wiedza o stosie, ramkach funkcji i PLT jest podstawą do budowania ataków takich jak buffer overflow, ROP czy ret2plt. Zmiana instrukcji warunkowych lub adresów funkcji umożliwia obejście autoryzacji.</p>
+
+
+
+<p>Ten artykuł to dopiero początek. W kolejnych częściach tej serii zanurzymy się w binarnym chaosie — odczytamy, zmodyfikujemy i zaatakujemy działające programy.</p>
+
+
+
+<p>A teraz nie przedłużając, zaczynajmy!</p>
+
+
+
+<h3> Wstęp </h3>
+
+
+
+<p>Napiszmy prosty program w języku C:</p>
+
+
+
+<pre class="code-block">
+<code>
+#include &lt;stdio.h&gt;
+
+int main() {
+        printf("Hello, World!\n");
+        return 0;
+}
+</code>
+</pre>
+
+
+
+<p>Następnie go skompilujemy:</p>
+
+
+
+<pre class="code-block">
+<code>
+$ gcc hello.c -o hello
+</code>
+</pre>
+
+
+
+<p><code>Kompilacja</code> jest procesem tłumaczenia kodu źródłowego programu, napisanego w języku wysokiego poziomu, na kod maszynowy, który jest zrozumiały dla procesora komputera. Po skompilowaniu programu powinniśmy otrzymać program wykonywalny (ang. executable) o nazwie <em>hello</em>.</p>
+
+
+
+<p>W systemach Linux, programy wykonywalne są zapisane w formacie ELF (Executable and Linkable Format), na Windowsie z kolei w formacie PE (Portable Executable).</p>
+
+
+
+<figure class="wp-block-image size-large"><img fetchpriority="high" decoding="async" width="1024" height="82" src="/wp-content/uploads/2025/06/image-29-1024x82.png" alt="" class="wp-image-1230" srcset="/wp-content/uploads/2025/06/image-29-1024x82.png 1024w, /wp-content/uploads/2025/06/image-29-300x24.png 300w, /wp-content/uploads/2025/06/image-29-768x61.png 768w, /wp-content/uploads/2025/06/image-29-1536x123.png 1536w, /wp-content/uploads/2025/06/image-29.png 1902w" sizes="(max-width: 1024px) 100vw, 1024px"></figure>
+
+
+
+<p>Teraz, kiedy mamy już plik wykonywalny, możemy podejrzeć, jak tak naprawdę wygląda program, który komputer zrozumie. Oto on (a przynajmniej jego krótka część):</p>
+
+
+
+<pre class="code-block">
+<code>
+$ xxd -b hello
+</code>
+</pre>
+
+
+
+<figure class="wp-block-image size-full"><img decoding="async" width="872" height="905" src="/wp-content/uploads/2025/06/image-30.png" alt="" class="wp-image-1231" srcset="/wp-content/uploads/2025/06/image-30.png 872w, /wp-content/uploads/2025/06/image-30-289x300.png 289w, /wp-content/uploads/2025/06/image-30-768x797.png 768w" sizes="(max-width: 872px) 100vw, 872px"></figure>
+
+
+
+<p>W pierwszej kolumnie mamy przesunięcie (ang. offset), tzn. jak daleko posunęliśmy się od początku pliku. Przesunięcie jest zapisane w postaci liczb szesnastkowych. Kolejne sześć kolumn to nasz program w postaci binarnej, a ostatnia – reprezantacja w formacie ASCII, czytelna dla ludzi. Kiedy wykonujemy nasz program, system operacyjny załaduje program z dysku do RAMu, aby następnie stamtąd mógł powędrować do procesora, który go wykona.</p>
+
+
+
+<p>Oprócz zapisu binarnego jednak istnieją także inne systemy zapisu, bardziej przyjazne ludziom, takie jak wspomniany assembler. Aby podejrzeć taki kod, możemy użyć polecenia:</p>
+
+
+
+<pre class="code-block">
+<code>
+$ objdump -d -M intel hello
+</code>
+</pre>
+
+
+
+<p>Fragmet kodu assemblera z funkcją main został przedstawiony poniżej i podkreślony na zielono:</p>
+
+
+
+<figure class="wp-block-image size-large"><img decoding="async" width="1024" height="211" src="/wp-content/uploads/2025/06/image-31-1024x211.png" alt="" class="wp-image-1239" srcset="/wp-content/uploads/2025/06/image-31-1024x211.png 1024w, /wp-content/uploads/2025/06/image-31-300x62.png 300w, /wp-content/uploads/2025/06/image-31-768x158.png 768w, /wp-content/uploads/2025/06/image-31.png 1200w" sizes="(max-width: 1024px) 100vw, 1024px"></figure>
+
+
+
+<p><strong>Jedna komenda assemblera odpowiada dokładnie jednemu rozkazowi procesora</strong>, a więc każda linijka, którą widzicie powyżej, to jedno działanie wykonane przez procesor. Jedno polecenie, w składni Intelowskiej, zbudowane jest następująco:</p>
+
+
+
+<pre class="code-block">
+<code>
+mnemonik operandy
+mnemonik cel, źródło
+</code>
+</pre>
+
+
+
+<p>Czyli dla przykładu:</p>
+
+
+
+<pre class="code-block">
+<code>
+mov rdi,rax
+</code>
+</pre>
+
+
+
+<p>Odczytaj rejestr rax i zapisz do rdi. Skoro już znamy strukturę polecenia, pora dowiedzieć się, czym są rejestry!</p>
+
+
+
+<h3> Rejestry procesora </h3>
+
+
+
+<p>Rejestry procesora to najmniejsza, ale jednocześnie najszybsza pamięć Twojego komputera. Znajdują się wewnątrz procesora i służą do czasowego przechowywania danych i rozkazów. W każdej architekturze procesora może być inny zestaw rejestrów, ale jago zadania są takie same.</p>
+
+
+
+<p>Wszystkie wymienione niżej rejestry mają pojemność 16 bitów. Istnieją również rejestry rozpoczynające się na E (32-bitowe) np. EAX, EBP, EFLAGS itp., oraz poprzedzone R (64-bitowe), np. RIP, RBX, RBI itd.</p>
+
+
+
+<p>Dla architektury x86 wyróżniamy:</p>
+
+
+
+<h5> Rejestry ogólnego przeznaczenia </h5>
+
+
+
+<p>Rejestry ogólnego przeznaczenia (ang. General-purpose Registers, GPR) służą wielu celom. Mimo, że nazwa sugeruje dowolność, każdy z nich ma tradycyjnie przypisane typowe zastosowania, które wynikają z instrukcji procesora i konwencji asemblera (np. w ABI – Application Binary Interface). Przechowują argumenty, dane, adresy, czy wyniki operacji.</p>
+
+
+
+<figure class="wp-block-table"><table class="has-fixed-layout"><tbody><tr><td><strong>Rejestr:</strong></td><td><strong>Opis:</strong></td></tr><tr><td>AX</td><td>Accumulator: operacje arytmetyczne, logiczne, oraz instrukcje transferu danych</td></tr><tr><td>BX</td><td>Base: adresowanie pamięci</td></tr><tr><td>CX</td><td>Counter: licznik pętli</td></tr><tr><td>DX</td><td>Data: operacje mnożenia i dzielenia, operacje I/O, przekazywanie argumentów do funkcji</td></tr></tbody></table></figure>
+
+
+
+<p>Powyższe rejestry mają pojemność 16 bitów. Każdy z nich dzieli się na kolejne dwa rejestry. Młodszy (low) i starszy (high), mające po 8 bitów każdy. Tak więc rejestr AX możemy podzielić na AL oraz AH.</p>
+
+
+
+<h5> Rejestry indeksujące i bazowe </h5>
+
+
+
+<p>Rejestry indeksujące (ang. index registers) i bazowe (ang. pointer registers) w architekturze x86 są <strong>kluczowe dla adresowania pamięci</strong> i odgrywają ważną rolę w pracy ze stosem, tablicami, buforami oraz przy przekazywaniu argumentów do funkcji.</p>
+
+
+
+<figure class="wp-block-table"><table class="has-fixed-layout"><tbody><tr><td><strong>Rejestr:</strong></td><td><strong>Opis:</strong></td></tr><tr><td>SI</td><td>Source Index: przechowuje adres przesunięcia źródła w instrukcjach manipulacji ciągiem znaków.</td></tr><tr><td>DI</td><td>Destination Index: przechowuje adres przesunięcia miejsca docelowego w instrukcjach manipulacji ciągiem znaków.</td></tr><tr><td>BP</td><td>Base Pointer: Ułatwia dostęp do lokalnych zmiennych i argumentów. Wskazuje na segment danych na stosie.</td></tr><tr><td>SP</td><td>Stack Pointer: Wskazuje na szczyt stosu.</td></tr></tbody></table></figure>
+
+
+
+<h5> Rejestry segmentowe </h5>
+
+
+
+<p>Rejestry segmentowe (ang. segment registers) to wyjątkowa część architektury x86. Ich rola to umożliwienie segmentowania pamięci, czyli podziału przestrzeni adresowej na logiczne obszary — kod, dane, stos itd. Przechowują <strong>adres segmentu</strong> – czyli bazowy adres danego obszaru w pamięci. Procesor łączy ten segment z offsetem (np. <code>AX</code>, <code>SI</code>, <code>BP</code>, itd.), by uzyskać <strong>pełny adres fizyczny lub liniowy</strong>.</p>
+
+
+
+<figure class="wp-block-table"><table class="has-fixed-layout"><tbody><tr><td><strong>Rejestr:</strong></td><td><strong>Opis:</strong></td></tr><tr><td>CS</td><td>Code Segment: Wszystkie dostępy do instrukcji, do których odwołuje się rejestr wskaźnika instrukcji (IP), są wykonywane przez CPU przy użyciu segmentu CS.</td></tr><tr><td>DS</td><td>Data Segment: Domyślny segment dla większości operacji na danych.</td></tr><tr><td>SS</td><td>Stack Segment: Wraz z SP/BP wskazuje miejsce na stosie</td></tr><tr><td>ES</td><td>Extra Segment: Używany m.in. w operacjach na łańcuchach</td></tr><tr><td>FS</td><td>File Segment: Rejestry FS nie mają celu, który jest z góry określony przez CPU; zamiast tego, system operacyjny, który je uruchamia, nadaje im cel. W procesach Windows, FS jest używany do wskazywania bloku informacji o wątku (TIB).</td></tr><tr><td>GS</td><td>Graphics Segment: Często używany jako wskaźnik do pamięci lokalnej wątku (TLS)</td></tr></tbody></table></figure>
+
+
+
+<h5> Dodatkowo </h5>
+
+
+
+<p>Istnieją dwa rejestry, które nie zaliczają się do żadnych z powyższych grup. Jest to FLAGS, czyli rejestr flag procesora, oraz IP – wskaźnik adresowy na aktualnie wykonywaną instrukcję. </p>
+
+
+
+<p>Za pomocą rejestru IP realizuje się pętle, skoki oraz przejścia do funkcji. Dodatkowo, wraz z rejestrami segmentowymi służy do określania adresów w pamięci.</p>
+
+
+
+<p>FLAGS zawiera bity stanu:</p>
+
+
+
+<ul class="wp-block-list">
+<li><strong>CF (Carry Flag – flaga przeniesienia)</strong> Ustawiana na 1, gdy wynik operacji arytmetycznej przekroczy dopuszczalny zakres zmiennej (np. nastąpiło przeniesienie bitu poza dostępny rozmiar). Stosowana głównie w operacjach bez znaku.</li>
+
+
+
+<li><strong>PF (Parity Flag – flaga parzystości)</strong> Informuje, czy liczba bitów ustawionych na 1 w najmłodszym bajcie wyniku jest parzysta. Jeśli tak – flaga zostaje ustawiona.</li>
+
+
+
+<li><strong>AF (Auxiliary Carry Flag – pomocnicza flaga przeniesienia)</strong> Używana głównie przy obliczeniach na liczbach w formacie BCD. Jest ustawiana, gdy nastąpi przeniesienie z bitu 3 do 4 lub pożyczka w przeciwnym kierunku.</li>
+
+
+
+<li><strong>ZF (Zero Flag – flaga zera)</strong> Wskazuje, czy wynik ostatniej operacji był równy zero. Jeśli tak, flaga jest ustawiona; w przeciwnym razie – wyczyszczona.</li>
+
+
+
+<li><strong>SF (Sign Flag – flaga znaku)</strong> Odzwierciedla znak wyniku – przyjmuje wartość najstarszego bitu (MSB). Jeśli bit ten to 1, oznacza to liczbę ujemną.</li>
+
+
+
+<li><strong>TF (Trap Flag – flaga pułapki)</strong> Aktywuje tryb pracy krokowej procesora. Po wykonaniu każdej instrukcji generowane jest przerwanie, co umożliwia debugowanie krok po kroku.</li>
+
+
+
+<li><strong>IF (Interrupt Flag – flaga przerwań)</strong> Gdy ustawiona, pozwala CPU na odbieranie przerwań sprzętowych. Jej wyzerowanie blokuje obsługę takich przerwań.</li>
+
+
+
+<li><strong>DF (Direction Flag – flaga kierunku)</strong> Określa kierunek przetwarzania danych w instrukcjach łańcuchowych. Jeśli flaga jest ustawiona, adresy przetwarzane są w dół (malejąco); jeśli wyzerowana – w górę (rosnąco).</li>
+
+
+
+<li><strong>OF (Overflow Flag – flaga przepełnienia)</strong> Informuje o przepełnieniu w operacjach arytmetycznych na liczbach ze znakiem – gdy wynik nie mieści się w przewidzianym zakresie i zostaje zafałszowany znak.</li>
+</ul>
+
+
+
+<h3> Instrukcje asemblera </h3>
+
+
+
+<p>Wyróżniamy dwie składnie asemblera: Intelowską oraz AT&amp;T. Widzieliście nasz program „Witaj, świecie!” w składni Intel. Oto jak wyglądałby w AT&amp;T:</p>
+
+
+
+<figure class="wp-block-image size-large"><img decoding="async" width="1024" height="205" src="/wp-content/uploads/2025/06/image-32-1024x205.png" alt="" class="wp-image-1274" srcset="/wp-content/uploads/2025/06/image-32-1024x205.png 1024w, /wp-content/uploads/2025/06/image-32-300x60.png 300w, /wp-content/uploads/2025/06/image-32-768x154.png 768w, /wp-content/uploads/2025/06/image-32.png 1236w" sizes="(max-width: 1024px) 100vw, 1024px"></figure>
+
+
+
+<p>Charakterystycznym znakiem rozpoznawczym jest znak procenta przed rejestrami dla składni AT&amp;T. Dodatkowo, kolejność operandów jest zmieniona. W tym przypadku mamy najpierw źródło, a następnie cel. Jako, że składnia Intela jest bardziej czytelna, to właśnie ją będziemy stosować. Polecenie <code>objdump</code>, którego użyłem do utworzenia kodu, tworzy pseudo-AT&amp;T – jego uproszczoną wersję.</p>
+
+
+
+<p>Zobaczmy, jak wyglądają mnemoniki w asemblerze w składni Intela.</p>
+
+
+
+<h5> Arytmetyka i logika </h5>
+
+
+
+<figure class="wp-block-table"><table class="has-fixed-layout"><tbody><tr><td><strong>Instrukcje:</strong></td><td><strong>Opis</strong>:</td></tr><tr><td><code>add</code>, <code>sub</code></td><td>Dodawanie i odejmowanie</td></tr><tr><td><code>inc</code>, <code>dec</code></td><td>Zwiększanie/zmniejszanie o 1</td></tr><tr><td><code>mul</code>, <code>imul</code></td><td>Mnożenie bez / ze znakiem</td></tr><tr><td><code>div</code>,<code> idiv</code></td><td>Dzielenie bez / ze znakiem</td></tr><tr><td><code>and</code>,<code> or</code>, <code>xor</code>, <code>not</code></td><td>Operacje logiczne</td></tr><tr><td><code>cmp</code></td><td>Porównanie dwóch wartości. Ustawia flagi</td></tr><tr><td><code>test</code></td><td>Operacja and w celu ustawienia flag. Nie zapisuje wyniku</td></tr></tbody></table></figure>
+
+
+
+<p>Przykładowo:</p>
+
+
+
+<pre class="code-block">
+<code>
+add eax, 12   ; Dodaj liczbę 12 do wartości w rejestrze eax
+add eax, edx  ; Dodaj wartość rejestru edx do wartości w rejestrze eax
+</code>
+</pre>
+
+
+
+<h5> Transfer danych </h5>
+
+
+
+<figure class="wp-block-table"><table class="has-fixed-layout"><tbody><tr><td><strong>Instrukcje:</strong></td><td><strong>Opis:</strong></td></tr><tr><td><code>mov</code></td><td>Kopiuje dane z jednej lokalizacji do drugiej</td></tr><tr><td><code>xchg</code></td><td>Zamienia wartość między dwoma operandami</td></tr><tr><td><code>lea</code></td><td>Wczytaj adres (a nie wartość pod danych adresem!) do rejestru</td></tr><tr><td><code>push</code></td><td>Wkłada dane na stos</td></tr><tr><td><code>pop</code></td><td>Zdejmuje dane ze stosu</td></tr></tbody></table></figure>
+
+
+
+<h5> Skoki i sterowanie przepływem </h5>
+
+
+
+<figure class="wp-block-table"><table class="has-fixed-layout"><tbody><tr><td><strong>Instrukcje:</strong></td><td><strong>Opis:</strong></td><td><strong>Znacznik lub rejestr:</strong></td></tr><tr><td><code>jmp</code></td><td>Skok bezwarunkowy – przenosi kontrolę programu do innego punktu w kodzie.</td><td>–</td></tr><tr><td><code>je</code>, <code>jne</code></td><td>Skoki warunkowe: jeśli równe / nierówne</td><td>je: ZF=1, <br>jne: ZF=0</td></tr><tr><td><code>jg</code>, <code>jl</code>, <code>jge</code>, <code>jle</code></td><td>Skoki porównujące liczby ze znakiem</td><td>jg: ZF=0 i SF=OF, <br>jl: SF&lt;&gt;OF,<br>jge: SF=OF,<br>jle: ZF=1 lub SF&lt;&gt;OF</td></tr><tr><td><code>ja</code>, <code>jb</code>, <code>jae</code>, <code>jbe</code></td><td>Skoki porównujące liczby bez znaku</td><td>ja: CF=0 i ZF=0,<br>jb: CF=1,<br>jae: CF=0,<br>jbe: CF=1 lub ZF=1</td></tr><tr><td><code>call</code></td><td>Wywołanie funkcji</td><td>–</td></tr><tr><td><code>ret</code></td><td>Powrót z funkcji</td><td>–</td></tr><tr><td><code>loop</code></td><td>Pętla</td><td>Powtarza, aż ecx/rcx = 0</td></tr><tr><td><code>nop</code></td><td>Pusta instrukcja, bez działania</td><td>–</td></tr></tbody></table></figure>
+
+
+
+<p>Skoro znamy już instrukcje asemblera, przeanalizujmy wspólnie przykład z „Witaj, świecie!”.</p>
+
+
+
+<figure class="wp-block-image size-large"><img decoding="async" width="1024" height="211" src="/wp-content/uploads/2025/06/image-31-1024x211.png" alt="" class="wp-image-1239" srcset="/wp-content/uploads/2025/06/image-31-1024x211.png 1024w, /wp-content/uploads/2025/06/image-31-300x62.png 300w, /wp-content/uploads/2025/06/image-31-768x158.png 768w, /wp-content/uploads/2025/06/image-31.png 1200w" sizes="(max-width: 1024px) 100vw, 1024px"></figure>
+
+
+
+<p>1139: Zachowaj stary base pointer</p>
+
+
+
+<ul class="wp-block-list">
+<li><code>rbp</code> to <em>base pointer</em> – wskazuje na początek <a href="https://www.ibm.com/docs/pl/xl-fortran-aix/16.1.0?topic=conventions-stack">ramki stosu</a> bieżącej funkcji.</li>
+
+
+
+<li><code>push rbp</code> — zapisuje starą wartość <code>rbp</code>, żeby można było do niej wrócić po zakończeniu funkcji.</li>
+</ul>
+
+
+
+<p>113a: Do tego momentu: funkcja ustawia swoje własne „środowisko” (ramkę stosu).</p>
+
+
+
+<ul class="wp-block-list">
+<li><code>rsp</code> to <em>stack pointer</em> – wskazuje na szczyt stosu.</li>
+
+
+
+<li><code>mov rbp, rsp</code> — nowa ramka funkcji zaczyna się tu, gdzie aktualnie znajduje się stos.</li>
+</ul>
+
+
+
+<p>113d: Załaduj adres stringa „Hello, world!” do rejestru <code>rax</code></p>
+
+
+
+<ul class="wp-block-list">
+<li><code>rip+0xec0</code> oznacza, że tekst (np. „Hello, world!\n”) znajduje się w pamięci <strong>0xec0 bajtów dalej od aktualnej pozycji kodu</strong>.</li>
+
+
+
+<li><code>lea</code> to <em>load effective address</em> — ładuje adres (nie wartość!) do rejestru.</li>
+
+
+
+<li><code>rip</code> to <em>instruction pointer</em> — adres obecnie wykonywanej instrukcji.</li>
+</ul>
+
+
+
+<p>1144: Przygotuj argument funkcji puts()</p>
+
+
+
+<ul class="wp-block-list">
+<li>Tu <code>rdi = rax</code>, czyli: przekazujemy adres tekstu jako argument do <code>puts</code>.</li>
+
+
+
+<li>W systemie Linux x86_64 (ABI System V), pierwszy argument funkcji przekazywany jest przez rejestr <code>rdi</code>.</li>
+</ul>
+
+
+
+<p>1147: Wywołanie funkcji <code>puts()</code></p>
+
+
+
+<ul class="wp-block-list">
+<li><code>call</code> wywołuje funkcję – tu: <code>puts()</code>, która wypisuje tekst na stdout.</li>
+
+
+
+<li><code>@plt</code> (Procedure Linkage Table) to mechanizm, który obsługuje dynamiczne biblioteki.</li>
+</ul>
+
+
+
+<p>114c: Ustaw kod powrotu funkcji <code>main()</code> na 0</p>
+
+
+
+<ul class="wp-block-list">
+<li><code>eax</code> to rejestr, w którym funkcja <code>main()</code> zwraca wartość (<code>return 0;</code>).</li>
+
+
+
+<li>Czyli: „program zakończył się bez błędów”.</li>
+</ul>
+
+
+
+<p>1151: Przywróć stary <code>rbp</code> ze stosu</p>
+
+
+
+<ul class="wp-block-list">
+<li>Kończymy ramkę funkcji – przywracamy poprzedni <code>rbp</code> sprzed <code>push</code>.</li>
+</ul>
+
+
+
+<p>1152: Powrót z funkcji</p>
+
+
+
+<ul class="wp-block-list">
+<li><code>ret</code> – wraca do miejsca, z którego <code>main()</code> została wywołana (w tym wypadku: kończy program).</li>
+</ul>
+
+
+
+<p>W taki sposób procesor wykonuje Twój program „Witaj, świecie!”.</p>
+
+
+
+<h3> Podsumowanie </h3>
+
+
+
+<p>Z pozoru prosty program w C kryje w sobie cały świat niskopoziomowych mechanizmów: stos, ramki funkcji, tablice PLT i GOT, format ELF i kod maszynowy. Choć dla zwykłego użytkownika to niewidoczne, dla hakera czy pentestera to pole bitwy.</p>
+
+
+
+<p>Zrozumienie tych fundamentów to pierwszy krok do analizy, modyfikowania i atakowania binarek. W kolejnych artykułach przejdziemy od teorii do praktyki — i pokażemy, jak z tych cegiełek buduje się prawdziwe exploity.</p>
+
+
+
+<p></p>
+
+
+
+<p></p>
+
+
+
+<p></p>
+    </div>
+
+    <div class="related-posts-header">
+        Może Cię zainteresuje?
+    </div>
+    <section class="related-posts">
+                            <div class="related-post">
+                        <a href="/2025/05/ssl-tls-przewodnik/">
+                            <img width="300" height="272" src="/wp-content/uploads/2025/05/Screenshot-2025-05-04-173939-300x272.png" class="attachment-medium size-medium wp-post-image" alt="" decoding="async" srcset="/wp-content/uploads/2025/05/Screenshot-2025-05-04-173939-300x272.png 300w, /wp-content/uploads/2025/05/Screenshot-2025-05-04-173939.png 632w" sizes="(max-width: 300px) 100vw, 300px">                            <h3>Protokół SSL/TLS: czym jest i jak działa?</h3>
+                            <p>
+Każda Twoja płatność internetowa, e-mail, postawiony komentarz czy obejrzany filmik na YouTube, to mała paczka danych przemierzająca kilometry kabli Internetu.…</p>
+                        </a>
+                    </div>
+                                <div class="related-post">
+                        <a href="/2025/05/brambul-analiza-statyczna-malware/">
+                            <img width="300" height="200" src="/wp-content/uploads/2025/05/brambul-300x200.png" class="attachment-medium size-medium wp-post-image" alt="" decoding="async" srcset="/wp-content/uploads/2025/05/brambul-300x200.png 300w, /wp-content/uploads/2025/05/brambul.png 1536w" sizes="(max-width: 300px) 100vw, 300px">                            <h3>Brambul pod mikroskopem. Poznaj narzędzia grup APT!</h3>
+                            <p>Poniższa analiza stanowi fragment większego artykułu poświęconego atakowi na Sony Pictures Entertainment z 2014 roku – jednej z najgłośniejszych kampanii…</p>
+                        </a>
+                    </div>
+                                    <div class="related-post">
+                            <a href="/2025/06/studia-informatyczne-opinie-2025/">
+                                <img width="300" height="200" src="/wp-content/uploads/2025/06/studia-informatyka-300x200.png" class="attachment-medium size-medium wp-post-image" alt="" decoding="async" srcset="/wp-content/uploads/2025/06/studia-informatyka-300x200.png 300w, /wp-content/uploads/2025/06/studia-informatyka-1024x683.png 1024w, /wp-content/uploads/2025/06/studia-informatyka-768x512.png 768w, /wp-content/uploads/2025/06/studia-informatyka.png 1536w" sizes="(max-width: 300px) 100vw, 300px">                                <h3>Studia informatyczne w Polsce: czy warto? [Wyniki ankiety 2025]</h3>
+                                <p>Zbliżają się wakacje, a to oznacza, że tysiące maturzystów będzie musiało podjąć bardzo ważną decyzję – co dalej? 
+
+Wybór studiów…</p>
+                            </a>
+                        </div>
+                                            <div class="related-post">
+                            <a href="/2025/05/analogowy-haktywizm-faks-w-sluzbie-buntu/">
+                                <img width="300" height="200" src="/wp-content/uploads/2025/05/black-fax-thumbnail-300x200.png" class="attachment-medium size-medium wp-post-image" alt="" decoding="async" srcset="/wp-content/uploads/2025/05/black-fax-thumbnail-300x200.png 300w, /wp-content/uploads/2025/05/black-fax-thumbnail-1024x683.png 1024w, /wp-content/uploads/2025/05/black-fax-thumbnail-768x512.png 768w, /wp-content/uploads/2025/05/black-fax-thumbnail.png 1536w" sizes="(max-width: 300px) 100vw, 300px">                                <h3>Kiedyś to się DoSowało… papierem</h3>
+                                <p>
+13 grudnia 2010 roku, godzina 13:00 czasu amerykańskiego. Rozpoczyna się kolejna seria cyberataków. Jest to kontynuacja Operacji Payback, przeprowadzanej przez…</p>
+                            </a>
+                        </div>
+                        </section>
+
+    
+<script>
+function handleNewsletterSubmit(event) {
+    event.preventDefault();
+
+    const form = event.target;
+    const button = document.getElementById('newsletter-submit-btn');
+    const successMsg = document.getElementById('newsletter-success');
+
+    // Wyłącz przycisk i zmień tekst na „..."
+    button.disabled = true;
+    button.innerHTML = '⏳ Wysyłanie...';
+
+    fetch(form.action, {
+        method: "POST",
+        body: new FormData(form),
+    })
+    .then(res => res.text())
+    .then(() => {
+        // Sukces – zamień przycisk na checkmark
+        button.innerHTML = '✅ Zapisano!';
+        button.style.backgroundColor = '#99F67540'; // zielony
+        button.style.cursor = 'default';
+
+        // Opcjonalnie: pokaż dodatkowy komunikat
+        // successMsg.style.display = 'block';
+
+        form.reset(); // wyczyść pole e-mail
+    })
+    .catch(() => {
+        // Błąd – przywróć przycisk
+        button.disabled = false;
+        button.innerHTML = 'Spróbuj ponownie';
+        button.style.backgroundColor = '#e74c3c'; // czerwony
+    });
+
+    return false;
+}
+</script>
+
+<footer class="">
+    <div class="newsletter">
+        <h2> Zapisz się na newsletter! </h2>
+        <p> Wrzucam tam tylko to, co sam chciałbym dostać. Serio!  </p>
+
+        <form class="newsletter-input" method="post" action="/wordpress/wp-admin/admin-ajax.php?action=tnp&amp;na=s" onsubmit="return handleNewsletterSubmit(event)">
+            <input type="email" name="ne" class="newsletter-form" placeholder="username@domain.tld" required>
+            <button type="submit" class="newsletter-button" id="newsletter-submit-btn"> ZAPISZ SIĘ! </button>
+        </form>
+
+        <div id="newsletter-success" style="display:none; position: fixed; top: 30%; left: 50%; transform: translateX(-50%); background: white; padding: 20px; border: 2px solid #000; z-index: 1000;">
+            Dziękujemy za zapis
+        </div>
+
+        <div class="socials">
+            <a href="https://x.com/latenightlogin_" target="_blank">
+                <div class="social social-x">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewbox="0 0 512 512" height="40px" width="40px">
+                        <path fill="#ffffff" d="M389.2 48h70.6L305.6 224.2 487 464H345L233.7 318.6 106.5 464H35.8L200.7 275.5 26.8 48H172.4L272.9 180.9 389.2 48zM364.4 421.8h39.1L151.1 88h-42L364.4 421.8z"></path>
+                    </svg>
+                </div>
+            </a>
+            <a href="/feed/" target="_blank">
+                <div class="social social-rss">
+                    <img src="/wp-content/themes/latenightlogin/assets/src/img/rss-svgrepo-com.svg" alt="RSS Ikona">
+                </div>
+            </a>
+        </div>
+    </div>
+
+    <div id="contact">
+        <b> Chcesz pogadać? </b> <br>
+        Masz pytania, sugestie, albo po prostu chcesz się przywitać? Napisz do mnie: <br>
+        📬 <span style="color: #99F675"><a href="/cdn-cgi/l/email-protection" class="__cf_email__" data-cfemail="e3808c8d97828097a38f8297868d8a848b978f8c848a8dcd808c8e">[email protected]</a> </span> <br> <br>
+        Piszę, kombinuję i poprawiam dla Was przecinki. Jeżeli nie chcesz, żebym  robił to głodny i zaspany -
+        <span style="color: #99F675"><a href="https://buymeacoffee.com/0bkp" target="_blank"> postaw mi kawę! ☕</a>  </span> <br> <br>
+        Całą stronę piszę ręcznie, aby miała swój własny, unikalny styl i była dla Was jak najprzyjemniejsza w użyciu. 
+        Z tego powodu część funkcjonalności nie jest jeszcze gotowa. Zapewniam, że nie leniuchuję i stale nad tym pracuję. :) <br>
+        Dzięki za wyrozumiałość! <br>
+    </div>
+</footer>
+
+<script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js" defer></script><script type="speculationrules">
+{"prefetch":[{"source":"document","where":{"and":[{"href_matches":"/*"},{"not":{"href_matches":["/wp-*.php","/wp-admin/*","/wp-content/uploads/*","/wp-content/*","/wp-content/plugins/*","/wp-content/themes/latenightlogin/*","/*\\?(.+)"]}},{"not":{"selector_matches":"a[rel~=\"nofollow\"]"}},{"not":{"selector_matches":".no-prefetch, .no-prefetch a"}}]},"eagerness":"conservative"}]}
+</script>
+<script type="text/javascript" src="/wp-content/themes/latenightlogin/assets/main.js?ver=1751194528" id="main-js-js"></script>
+<script type="text/javascript" src="/wp-content/themes/latenightlogin/assets/src/library/js/bootstrap.min.js?ver=6.9.4" id="bootstrap-js-js"></script>
+<script type="text/javascript" id="searchbar-js-js-extra">
+/* <![CDATA[ */
+var ajaxsearch = {"ajaxurl":"/wp-admin/admin-ajax.php"};
+//# sourceURL=searchbar-js-js-extra
+/* ]]> */
+</script>
+<script type="text/javascript" src="/wp-content/themes/latenightlogin/assets/src/js/search-bar.js?ver=1751194528" id="searchbar-js-js"></script>
+<script type="text/javascript" src="/wp-content/themes/latenightlogin/assets/src/js/hamburger.js?ver=1751194528" id="hamburger-js-js"></script>
+<script type="text/javascript" src="/wp-content/themes/latenightlogin/assets/src/js/mobile-search-bar.js?ver=1751194528" id="mobile-searchbar-js-js"></script>
+<script type="text/javascript" src="/wp-content/themes/latenightlogin/assets/src/js/header-animation.js?ver=1751194528" id="header-animation-js-js"></script>
+<script type="text/javascript" id="newsletter-js-extra">
+/* <![CDATA[ */
+var newsletter_data = {"action_url":"/wp-admin/admin-ajax.php"};
+//# sourceURL=newsletter-js-extra
+/* ]]> */
+</script>
+<script type="text/javascript" src="/wp-content/plugins/newsletter/main.js?ver=8.8.7" id="newsletter-js"></script>
+<script id="wp-emoji-settings" type="application/json">
+{"baseUrl":"https://s.w.org/images/core/emoji/17.0.2/72x72/","ext":".png","svgUrl":"https://s.w.org/images/core/emoji/17.0.2/svg/","svgExt":".svg","source":{"concatemoji":"/wp-includes/js/wp-emoji-release.min.js?ver=6.9.4"}}
+</script>
+<script type="module">
+/* <![CDATA[ */
+/*! This file is auto-generated */
+const a=JSON.parse(document.getElementById("wp-emoji-settings").textContent),o=(window._wpemojiSettings=a,"wpEmojiSettingsSupports"),s=["flag","emoji"];function i(e){try{var t={supportTests:e,timestamp:(new Date).valueOf()};sessionStorage.setItem(o,JSON.stringify(t))}catch(e){}}function c(e,t,n){e.clearRect(0,0,e.canvas.width,e.canvas.height),e.fillText(t,0,0);t=new Uint32Array(e.getImageData(0,0,e.canvas.width,e.canvas.height).data);e.clearRect(0,0,e.canvas.width,e.canvas.height),e.fillText(n,0,0);const a=new Uint32Array(e.getImageData(0,0,e.canvas.width,e.canvas.height).data);return t.every((e,t)=>e===a[t])}function p(e,t){e.clearRect(0,0,e.canvas.width,e.canvas.height),e.fillText(t,0,0);var n=e.getImageData(16,16,1,1);for(let e=0;e<n.data.length;e++)if(0!==n.data[e])return!1;return!0}function u(e,t,n,a){switch(t){case"flag":return n(e,"\ud83c\udff3\ufe0f\u200d\u26a7\ufe0f","\ud83c\udff3\ufe0f\u200b\u26a7\ufe0f")?!1:!n(e,"\ud83c\udde8\ud83c\uddf6","\ud83c\udde8\u200b\ud83c\uddf6")&&!n(e,"\ud83c\udff4\udb40\udc67\udb40\udc62\udb40\udc65\udb40\udc6e\udb40\udc67\udb40\udc7f","\ud83c\udff4\u200b\udb40\udc67\u200b\udb40\udc62\u200b\udb40\udc65\u200b\udb40\udc6e\u200b\udb40\udc67\u200b\udb40\udc7f");case"emoji":return!a(e,"\ud83e\u1fac8")}return!1}function f(e,t,n,a){let r;const o=(r="undefined"!=typeof WorkerGlobalScope&&self instanceof WorkerGlobalScope?new OffscreenCanvas(300,150):document.createElement("canvas")).getContext("2d",{willReadFrequently:!0}),s=(o.textBaseline="top",o.font="600 32px Arial",{});return e.forEach(e=>{s[e]=t(o,e,n,a)}),s}function r(e){var t=document.createElement("script");t.src=e,t.defer=!0,document.head.appendChild(t)}a.supports={everything:!0,everythingExceptFlag:!0},new Promise(t=>{let n=function(){try{var e=JSON.parse(sessionStorage.getItem(o));if("object"==typeof e&&"number"==typeof e.timestamp&&(new Date).valueOf()<e.timestamp+604800&&"object"==typeof e.supportTests)return e.supportTests}catch(e){}return null}();if(!n){if("undefined"!=typeof Worker&&"undefined"!=typeof OffscreenCanvas&&"undefined"!=typeof URL&&URL.createObjectURL&&"undefined"!=typeof Blob)try{var e="postMessage("+f.toString()+"("+[JSON.stringify(s),u.toString(),c.toString(),p.toString()].join(",")+"));",a=new Blob([e],{type:"text/javascript"});const r=new Worker(URL.createObjectURL(a),{name:"wpTestEmojiSupports"});return void(r.onmessage=e=>{i(n=e.data),r.terminate(),t(n)})}catch(e){}i(n=f(s,u,c,p))}t(n)}).then(e=>{for(const n in e)a.supports[n]=e[n],a.supports.everything=a.supports.everything&&a.supports[n],"flag"!==n&&(a.supports.everythingExceptFlag=a.supports.everythingExceptFlag&&a.supports[n]);var t;a.supports.everythingExceptFlag=a.supports.everythingExceptFlag&&!a.supports.flag,a.supports.everything||((t=a.source||{}).concatemoji?r(t.concatemoji):t.wpemoji&&t.twemoji&&(r(t.twemoji),r(t.wpemoji)))});
+//# sourceURL=/wp-includes/js/wp-emoji-loader.min.js
+/* ]]> */
+</script>
+</div></body>
+</html>

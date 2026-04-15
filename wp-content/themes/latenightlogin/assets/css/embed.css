@@ -1,0 +1,17 @@
+.wp-embed-heading a {
+    color: #99F675;
+    font-family: "Courier Prime";
+    text-decoration: none;
+}
+
+.wp-embed {
+    border-radius: 10px;
+}
+
+.wp-embed-excerpt p {
+    color: white;
+}
+
+.wp-embed {
+    background-color: #111827
+}
