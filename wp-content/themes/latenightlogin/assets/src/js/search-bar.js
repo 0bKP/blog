@@ -1,3 +1,4 @@
+/*
 let debounceTimeout;
 
 // Pobierz element wyszukiwania
@@ -25,6 +26,7 @@ searchInput.addEventListener('input', function(e) {
 });
 
 // Obsługa paginacji AJAX
+
 document.addEventListener('click', function(e) {
     const link = e.target.closest('.pagination-list a');
     if (link) {
@@ -42,3 +44,4 @@ document.addEventListener('click', function(e) {
         loadPosts(ajaxUrl);
     }
 });
+*/
