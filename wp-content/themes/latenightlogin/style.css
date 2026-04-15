@@ -210,7 +210,7 @@ nav {
 }
 
 .hero-image {
-    background-image: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url("/wp-content/themes/latenightlogin/assets/src/img/hero-img.jpg");
+    background-image: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url("/blog/wp-content/themes/latenightlogin/assets/src/img/hero-img.jpg");
     height: 100vh;
     background-position: center;
     background-repeat: no-repeat;
@@ -308,7 +308,7 @@ nav {
     }
 
     .hero-image {
-        background-image: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url("/wp-content/themes/latenightlogin/assets/src/img/hero-mobile-img.jpg");
+        background-image: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url("/blog/wp-content/themes/latenightlogin/assets/src/img/hero-mobile-img.jpg");
         padding: 2rem 1rem;
     }
 }
@@ -548,7 +548,7 @@ nav {
     .search-icon {
         width: 30px;
         height: 30px;
-        background: url('/wp-content/themes/latenightlogin/assets/src/img/search-icon.png') no-repeat center/cover;
+        background: url('/blog/wp-content/themes/latenightlogin/assets/src/img/search-icon.png') no-repeat center/cover;
         cursor: pointer;
     }
 
