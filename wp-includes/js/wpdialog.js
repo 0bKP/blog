@@ -1,5 +1,5 @@
 /**
- * @output wp-includes/js/wpdialog.js
+ * @output blog/wp-includes/js/wpdialog.js
  */
 
 /*

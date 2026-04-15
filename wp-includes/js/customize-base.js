@@ -1,5 +1,5 @@
 /**
- * @output wp-includes/js/customize-base.js
+ * @output blog/wp-includes/js/customize-base.js
  */
 
 /** @namespace wp */

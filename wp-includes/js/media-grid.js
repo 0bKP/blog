@@ -1009,7 +1009,7 @@ module.exports = Details;
 /******/ 	
 /************************************************************************/
 /**
- * @output wp-includes/js/media-grid.js
+ * @output blog/wp-includes/js/media-grid.js
  */
 
 var media = wp.media;

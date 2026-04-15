@@ -1,5 +1,5 @@
 /**
- * @output wp-includes/js/wp-ajax-response.js
+ * @output blog/wp-includes/js/wp-ajax-response.js
  */
 
  /* global wpAjax */

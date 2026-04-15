@@ -1,5 +1,5 @@
 /**
- * @output wp-includes/js/wp-list-revisions.js
+ * @output blog/wp-includes/js/wp-list-revisions.js
  */
 
 (function(w) {

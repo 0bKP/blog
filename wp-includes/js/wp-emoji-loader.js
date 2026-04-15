@@ -1,5 +1,5 @@
 /**
- * @output wp-includes/js/wp-emoji-loader.js
+ * @output blog/wp-includes/js/wp-emoji-loader.js
  */
 
 /* eslint-env es6 */
@@ -20,7 +20,7 @@ const settings = /** @type {WPEmojiSettings} */ (
 	JSON.parse( document.getElementById( 'wp-emoji-settings' ).textContent )
 );
 
-// For compatibility with other scripts that read from this global, in particular wp-includes/js/wp-emoji.js (source file: js/_enqueues/wp/emoji.js).
+// For compatibility with other scripts that read from this global, in particular blog/wp-includes/js/wp-emoji.js (source file: js/_enqueues/wp/emoji.js).
 window._wpemojiSettings = settings;
 
 /**

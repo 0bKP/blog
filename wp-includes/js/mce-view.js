@@ -1,5 +1,5 @@
 /**
- * @output wp-includes/js/mce-view.js
+ * @output blog/wp-includes/js/mce-view.js
  */
 
 /* global tinymce */

@@ -791,7 +791,7 @@ module.exports = MediaDetails;
 /******/ 	
 /************************************************************************/
 /**
- * @output wp-includes/js/media-audiovideo.js
+ * @output blog/wp-includes/js/media-audiovideo.js
  */
 
 var media = wp.media,

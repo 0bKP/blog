@@ -1,5 +1,5 @@
 /**
- * @output wp-includes/js/wp-pointer.js
+ * @output blog/wp-includes/js/wp-pointer.js
  */
 
 /**

@@ -1,5 +1,5 @@
 /**
- * @output wp-includes/js/wp-custom-header.js
+ * @output blog/wp-includes/js/wp-custom-header.js
  */
 
 /* global YT */

@@ -1,5 +1,5 @@
 /**
- * @output wp-includes/js/media-editor.js
+ * @output blog/wp-includes/js/media-editor.js
  */
 
 /* global getUserSetting, tinymce, QTags */

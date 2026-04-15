@@ -10408,7 +10408,7 @@ module.exports = Region;
 /******/ 	
 /************************************************************************/
 /**
- * @output wp-includes/js/media-views.js
+ * @output blog/wp-includes/js/media-views.js
  */
 
 var media = wp.media,

@@ -1,5 +1,5 @@
 /**
- * @output wp-includes/js/customize-loader.js
+ * @output blog/wp-includes/js/customize-loader.js
  */
 
 /* global _wpCustomizeLoaderSettings */

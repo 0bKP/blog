@@ -1,5 +1,5 @@
 /**
- * @output wp-includes/js/wp-lists.js
+ * @output blog/wp-includes/js/wp-lists.js
  */
 
 /* global ajaxurl, wpAjax */

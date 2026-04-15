@@ -2,7 +2,7 @@
  * WordPress inline HTML embed
  *
  * @since 4.4.0
- * @output wp-includes/js/wp-embed.js
+ * @output blog/wp-includes/js/wp-embed.js
  *
  * Single line comments should not be used since they will break
  * the script when inlined in get_post_embed_html(), specifically

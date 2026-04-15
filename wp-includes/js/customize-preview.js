@@ -1,7 +1,7 @@
 /*
  * Script run inside a Customizer preview frame.
  *
- * @output wp-includes/js/customize-preview.js
+ * @output blog/wp-includes/js/customize-preview.js
  */
 (function( exports, $ ){
 	var api = wp.customize,
@@ -674,7 +674,7 @@
 			/*
 			 * The body will support custom backgrounds if either the color or image are set.
 			 *
-			 * See get_body_class() in /wp-includes/post-template.php
+			 * See get_body_class() in /blog/wp-includes/post-template.php
 			 */
 			$( document.body ).toggleClass( 'custom-background', !! ( settings.color() || settings.image() ) );
 

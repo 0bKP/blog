@@ -1,5 +1,5 @@
 /**
- * @output wp-includes/js/wp-sanitize.js
+ * @output blog/wp-includes/js/wp-sanitize.js
  */
 
 /* eslint-env es6 */

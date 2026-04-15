@@ -24,7 +24,7 @@
  * - heartbeat-nonces-expired
  *
  * @since 3.6.0
- * @output wp-includes/js/heartbeat.js
+ * @output blog/wp-includes/js/heartbeat.js
  */
 
 ( function( $, window, undefined ) {

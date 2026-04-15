@@ -1,5 +1,5 @@
 /**
- * @output wp-includes/js/customize-models.js
+ * @output blog/wp-includes/js/customize-models.js
  */
 
 /* global _wpCustomizeHeader */
